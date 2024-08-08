@@ -1,0 +1,87 @@
+:root{
+    --primary-color: #2CE900;
+    --background-color: #ECECEC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 130px ;
+}
+
+[class*="col-"]{
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white ;
+    border-bottom: 1px solid rgb(179, 176, 176);
+    height: auto;
+}
+
+#sec-homepage .btn{
+    background-color: var(--primary-color);
+    font-size: 20px ;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+#sec-homepage .btn:hover{
+    opacity: 0.8;
+}
+
+.menu a{
+    color: black;
+}
+
+.content-list ul li::before {
+    content: url('/assets/img/tick-icon.png');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;  
+}
+
+.content-list ul li{
+    display: flex;
+    flex-grow: 1;
+}
+
+.form-group{
+    position: relative;
+}
+
+.form-group img{
+    position: absolute;
+    left: 10px;
+    top: 25%;
+    width: 5%;
+    height: 50%;
+}
+
+.form-group input{
+    padding-left: 40px;
+}
+
+#city {
+    border: 1px solid #ced4da;
+}
+.page13 li{
+    padding-bottom: 16px;
+}
+.page13 a{
+    color: black;
+}
+.page13 a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}

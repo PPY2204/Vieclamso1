@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid" >
+        <header class="header ">
+            <div class="header__wapper d-flex flex-md-row py-4 justify-content-around align-items-center">
+                <div class="col-7 col-lg-3">
+                    <div class="d-flex flex-column justify-content-start">
+                        <div class="logo-brand pb-2 ">
+                            <img src="../assets/img/logo-icon.jpg" alt="" class="img-fluid" width="100%" height="100%">
+                        </div>
+                        <h6 class="des-brand font-weight-bold" style="font-size: 22px ;">Kênh thông tin - việc làm số 1 tại Việt Nam</h6>
+                    </div>   
+                </div>
+                <div class="menu col-5 col-lg-5 ">     
+                    <nav class="navbar navbar-expand-lg" >
+                        <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#navbarcollapse" >
+                            <span class="navbar-toggler-icon"><img class="img-fluid" src="/../assets/img/menu.png" alt=""></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarcollapse" style="font-size: 22px;">
+                            <ul class="navbar-nav" style="font-weight: 500;">
+                                <li class="nav-item px-3 ">
+                                    <a href="#" class="nav-link active">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a href="#" class="nav-link">Dịch vụ</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a href="#" class="nav-link">Báo giá</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a href="#" class="nav-link">Hỗ trợ</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a href="#" class="nav-link">Blog tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4 d-none d-lg-flex flex-lg-wrap-reverse py-md-2 justify-content-around align-items-center ">
+                    <div class="lang d-lg-flex justify-content-around pt-md-3 align-items-center">
+                        <img src="../assets/img/america-icon.jpg" class="img-fluid pr-3" alt="">
+                        <img src="../assets/img/vietnam-icon.jpg" class="img-fluid pr-3" alt="">
+                        <img src="../assets/img/japan-icon.jpg" class="img-fluid pr-3" alt="">
+                    </div>
+                    <button class="btn text-white py-md-4 px-md-5" style="background-color: var(--primary-color); font-size: 25px;">Đăng tuyển & Tìm CV</button>
+                </div>
+            </div>
+        </header>
+
+        <section id="sec-homepage" class=" d-flex flex-column">
+            <!-- page 1 -->
+            <div class="page1 col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="page1-title py-5 d-flex flex-column align-items-center">
+                    <div class="display-4 font-weight-bold text-center" >Đăng tin tuyển dụng,</div>
+                    <div class="display-4 font-weight-bold text-center">tìm kiếm ứng viên hiệu quả </div>
+                </div>
+                <div class="page1-btn_post">
+                    <a href="html/login_page.html" class="btn text-white">Đăng tin miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                </div>
+                <div class="page1-image py-4">
+                    <img src="../assets/img/page1.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- page 2 -->
+            <div class="page2 col-12 d-flex flex-column flex-md-row align-items-center">
+                <div class="page2-content col-12 col-md-6 pl-md-5">
+                    <h4 class="page2-sub__title py-3" style="color: var(--primary-color);">BIG UPDATE</h4>
+                    <h1 class="page2-title py-2 pl-3" style="border-left:7px solid var(--primary-color);">Vieclamso1 Smart Recruitment Platform</h1>
+                    <p class="py-2" style="font-size: 28px; font-weight: 400;">
+                        Nền tảng công nghệ ứng dụng sâu trí tuệ nhân tạo (AI) và Recruitment
+                        Marketing, mang đến các giải pháp toàn diện giúp doanh nghiệp giải
+                        quyết đồng thời các bài toán xoay quanh vấn đề tuyển dụng, từ việc tạo
+                        nguồn CV, sàng lọc hồ sơ ứng viên cho đến đánh giá ứng viên và đo
+                        lường hiệu quả.</p>
+                    <a href="#" class="btn text-white">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                </div>
+                <div class="page2-image col-12 col-md-6">
+                    <img src="../assets/img/page2.png" alt="" width= "100%" height="100%">
+                </div>
+            </div>
+            <!-- page 3 -->
+            <div class="page3 col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="page3-title ">
+                    <h1 class="text-center py-5 display-4" style=" font-weight: 500;">Công nghệ đăng tin tuyển dụng mới. Tính năng mới. Trải nghiệm mới</h1>
+                </div>
+                <div class="page3-wapper col-12 col-md-12 mx-4 border d-flex flex-column flex-md-row align-items-center" style="border-radius: 20px; background-color: var(--background-color)">
+                    <div class="page3-image col-md-6 ">
+                        <img src="../assets/img/page3-AI.png" alt=""  style="width: 100%; height: 100%; transform: scaleX(-1);">
+                    </div>
+                    <div class="page3-content col-12 col-md-6 ">
+                        <div class="page3-content">
+                            <h4 class="page3-sub__title py-3" style="color: var(--primary-color);">AI IN RECRUITMENT</h4>
+                            <h1 class="page3-title py-2 pl-3" style="border-left:7px solid var(--primary-color);">Tương lai của tuyển dụng</h1>
+                            <p class="py-2 pr-5" style="font-size: 28px; font-weight: 400;">
+                                Toppy AI là "trái tim” của bản cập nhật Smart Recruitment Platform.
+                                Toppy AI được phát triển bởi đội ngũ kỹ sư tài năng của tuyendungso1
+                                Việt Nam thông qua việc ứng dụng công nghệ Trí tuệ nhân tạo (AI) và
+                                Học máy (Machine Learning). Toppy AI có khả năng phân tích yêu cầu,
+                                thói quen, hành vi của nhà tuyển dụng và ứng viên, đồng thời khai
+                                thác tối đa lượng dữ liệu lớn của tuyendungso1, từ đó đưa ra các phán
+                                đoán và đề xuất về những việc có thể làm để tuyển dụng hiệu quả
+                                hơn, kết nối đúng nhu cầu tuyển dụng của doanh nghiệp với các ứng
+                                viên phù hợp</p>
+                            <a href="#" class="btn text-white mb-3">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- page 4 -->
+            <div class="page4 my-5" style="background-color: var(--background-color);">
+                <div class="page4-content col-12 col-md-12 my-3">
+                    <div class="page4-content d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="page4-sub__title pt-5 py-2 text-center" style="color: var(--primary-color);">CORE FUNCTIONS OF TOPCV SMART RECRUITMENT PLATFORM</h4>
+                        <h1 class="page3-title py-3 display-4 text-center" style=" font-weight: 500;">Các tính năng chỉ có trên Vieclamso1 Smart Recruitment Platform</h1>
+                        <p class="px-5 text-center" style="font-size: 28px; font-weight: 400;">
+                            Với sức mạnh công nghệ, Vieclamso1 Smart Recruitment Platform kế thừa những hiệu quả hiện tại và mang đến trải nghiệm một cách hoàn toàn
+                            khác biệt, giúp doanh nghiệp tuyển dụng hiệu quả trong thời đại số.</p>
+                    </div>
+                    <div class="page4-card mt-5 d-flex flex-md-row flex-column justify-content-around align-items-stretch" >
+                        <!-- card 1 -->
+                        <div class=" border d-flex flex-column justify-content-start align-items-center mx-md-2 my-2 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center" >
+                                <h2 style="font-weight: 650;">Đề xuất bởi Toppy AI</h2>
+                            </div>
+                            <div class="card-img p-5">
+                                <img class="img-fluid" src="/../assets/img/page4-card1.png" alt="" >
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Toppy AI sẽ tiến hành phân tích dữ liệu
+                                    doanh nghiệp, nhu cầu tuyển dụng và hành
+                                    vi tìm việc của ứng viên để đề xuất những
+                                    hoạt động, giải pháp tuyển dụng giúp nhà
+                                    tuyển dụng gia tăng hiệu quả tuyển dụng.</p>
+                            </div>
+                            <div class="card-btn pb-5 ">
+                                <a href="#" style="color: var(--primary-color); font-weight: 700; font-size: 20px;">Tìm hiểu thêm </a>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class=" border d-flex flex-column justify-content-start align-items-center mx-md-2 my-2 w-100 " style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center" >
+                                <h2 style="font-weight: 650;">Chiến dịch Tuyển dụng</h2>
+                            </div>
+                            <div class="card-img p-5">
+                                <img class="img-fluid" src="/../assets/img/page4-card2.jpg" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="card-content mx-2 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Giúp doanh nghiệp hoàn thiện được cấu trúc
+                                    cơ bản của quá trình tuyển dụng và quản lý
+                                    được các nguồn mang lại hiệu quả cho hoạt
+                                    động tuyển dụng đó. Từ đó, nhà tuyển dụng
+                                    có thể tối ưu các phương pháp tìm nguồn
+                                    ứng viên và tuyển dụng hiệu quả hơn.</p>
+                            </div>
+                            <div class="card-btn pb-5 ">
+                                <a href="#" style="color: var(--primary-color); font-weight: 700; font-size: 20px;">Tìm hiểu thêm </a>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class=" border d-flex flex-column justify-content-start align-items-center mx-md-2 my-2 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center " >
+                                <h2 style="font-weight: 650;">Tính năng quản lý CV</h2>
+                            </div>
+                            <div class="card-img p-5" style="overflow: hidden;">
+                                <img class="img-fluid" src="/../assets/img/page4-card3.jpg" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="card-content mx-4 text-center " style="font-size: 28px; font-weight: 400;">
+                                <p>Giúp nhà tuyển dụng quản lý kho CV ứng
+                                    viên của mình một cách đầy đủ, có tính hệ
+                                    thống và không bị mất mát dữ liệu.</p>
+                            </div>
+                            <div class="card-btn pb-5 ">
+                                <a href="#" style="color: var(--primary-color); font-weight: 700; font-size: 20px;">Tìm hiểu thêm </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="page4-card d-flex flex-md-row flex-column justify-content-around align-items-stretch" >
+                        <!-- card 4 -->
+                        <div class=" border d-flex flex-column justify-content-start align-items-center mx-md-2 my-2 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center" >
+                                <h2 style="font-weight: 650;">Hệ thống báo cáo tuyển dụng</h2>
+                            </div>
+                            <div class="card-img p-5">
+                                <img class="img-fluid" src="/../assets/img/page4-card4.jpg" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Giúp nhà tuyển dụng biết được chính xác
+                                    số lượng CV ứng viên qua từng vòng từ
+                                    vòng nhận CV đến đi làm. Đồng thời cũng
+                                    đo lường chi phí tuyển dụng theo giá trị
+                                    thực tế mà doanh nghiệp đã chi trả để tìm
+                                    kiếm ứng viên.</p>
+                            </div>
+                            <div class="card-btn pb-5 ">
+                                <a href="#" style="color: var(--primary-color); font-weight: 700; font-size: 20px;">Tìm hiểu thêm </a>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class=" border d-flex flex-column justify-content-start align-items-center mx-md-2 my-2 w-100 " style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center" >
+                                <h2 style="font-weight: 650;">Hệ thống đánh giá ứng viên</h2>
+                            </div>
+                            <div class="card-img p-5">
+                                <img class="img-fluid" src="/../assets/img/page4-card5.jpg" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="card-content mx-2 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Với nền tảng TestCenter.vn, tuyendungso1
+                                    Smart Recruitment Platform giúp nhà tuyển
+                                    dụng đánh giá ứng viên toàn diện và khách
+                                    quan thông qua bài test online, từ đó tối ưu
+                                    tỷ lệ chuyển đổi, tìm kiếm ứng viên tài năng
+                                    từ nguồn CV ứng viên thu được từ Chiến
+                                    dịch tuyển dụng.</p>
+                            </div>
+                            <div class="card-btn pb-5 ">
+                                <a href="#" style="color: var(--primary-color); font-weight: 700; font-size: 20px;">Tìm hiểu thêm </a>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class=" border d-flex flex-column justify-content-start align-items-center mx-md-2 my-2 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center " >
+                                <h2 style="font-weight: 650;">Gia tăng hiệu quả tuyển dụng thông qua hình thức trả phí</h2>
+                            </div>
+                            <div class="card-img p-5">
+                                <img src="/../assets/img/page4-card6.jpg" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="card-content mx-4 text-center " style="font-size: 28px; font-weight: 400;">
+                                <p>Nhà tuyển dụng hoàn toàn chủ động trong
+                                    việc lựa chọn và kích hoạt dịch vụ phù hợp
+                                    để gia tăng số lượng CV ứng viên ứng
+                                    tuyển và tìm kiếm ứng viên tài năng. Với
+                                    các phương pháp tìm nguồn ứng viên thông
+                                    minh, hiệu quả, nhà tuyển dụng sẽ dễ dàng
+                                    tìm kiếm ứng viên cho Chiến dịch tuyển
+                                    dụng của mình khi sử dụng tuyendungso1
+                                    Smart Recruitment Platform.</p>
+                            </div>
+                            <div class="card-btn pb-5 ">
+                                <a href="#" style="color: var(--primary-color); font-weight: 700; font-size: 20px;">Tìm hiểu thêm </a>
+                            </div>
+                        </div>   
+                          
+                    </div>                 
+                </div>
+            </div>
+
+            <!-- page5 -->
+            <div class="page5 my-5 col-12">
+                <div class="page5-content col-12 col-md-12 ">
+                    <div class="page5-content d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="page5-sub__title pt-5 py-2 text-center" style="color: var(--primary-color);">RECRUITMENT SERVICES</h4>
+                        <h1 class="page3-title py-3 display-4 text-center" style=" font-weight: 500;">Dịch vụ đăng tin tuyển dụng</h1>
+                    </div>
+                </div>
+                <!-- Đăng tin -->
+                <div class="page5-wapper pt-5 d-flex flex-column flex-md-row justify-content-around align-items-center">
+                    <div class="col-12 col-md-6 page5-wapper__img text-center">
+                        <img src="../assets/img/page5.png" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="col-12 col-md-6 page5-wapper__content ">
+                        <div class="content-title">
+                            <h1>Đăng tin tuyển dụng miễn phí</h1>
+                        </div>
+                        <div class="content-list pt-5">
+                            <ul class="list-unstyled">
+                                <li class="pb-4" style="font-size: 22px;"> Đăng tin tuyển dụng miễn phí và không giới hạn số lượng.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Đăng tin tuyển dụng dễ dàng, không quá 1 phút.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Tiếp cận nguồn CV ứng viên khổng lồ, tìm kiếm ứng viên từ kho dữ liệu hơn 5 triệu hồ sơ.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Dễ dàng kiểm duyệt và đăng tin trong 24h.</li>
+                            </ul>
+                        </div>
+                        <div class="card-btn pb-5">
+                            <a href="#" class="btn text-white">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Top Job -->
+                <div class="page5-wapper d-flex flex-column flex-md-row justify-content-around align-items-center py-5">
+                    <div class="col-12 col-md-6 page5-wapper__content ">
+                        <div class="content-title">
+                            <h1>Top Jobs & Standard Plus - Đăng tin tuyển dụng</h1>
+                        </div>
+                        <div class="content-list py-5">
+                            <ul class="list-unstyled">
+                                <li class="pb-4" style="font-size: 22px;"> Tăng lượt tiếp cận người tìm việc thêm 300% khi đăng tuyển.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Tin tuyển dụng hiển thị ở những vị trí nổi bật.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Đẩy tin tuyển dụng lên vị trí đầu trong kết quả tìm kiếm việc làm trên trang web đăng tin tuyển dụng.</li>
+                                <li class="pb-0" style="font-size: 22px;"> Tự động gợi ý tin tuyển dụng với ứng viên phù hợp, giúp tuyển dụng hiệu quả hơn.</li>
+                            </ul>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#" class="btn text-white">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                        </div>    
+                    </div>
+                    <div class="col-12 col-md-6 page5-wapper__img text-center">
+                        <img src="../assets/img/page5-goal.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <!-- Top Credit -->
+                <div class="page5-wapper d-flex flex-column flex-md-row justify-content-around align-items-center py-5">
+                    <div class="col-12 col-md-6 page5-wapper__img text-center">
+                        <img src="../assets/img/page5-creadit.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="col-12 col-md-6 page5-wapper__content ">
+                        <div class="content-title">
+                            <h1>Top Credit - Nạp Credit mở CV ứng viên</h1>
+                        </div>
+                        <div class="content-list pt-5">
+                            <ul class="list-unstyled">
+                                <li class="pb-4" style="font-size: 22px;"> Chủ động tiếp cận 6.900.000+ CV ứng viên với hơn 50% ứng viên có kinh nghiệm từ 3 năm trở lên.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Tùy chỉnh các tiêu chí tìm kiếm ứng viên tài năng theo mong muốn: ngành nghề, vị trí tuyển dung, địa điểm làm việc, tính cách ứng viên.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Ứng dụng AI/Machine Learning giúp tìm kiếm ứng viên chính xác, nhanh chóng với mức độ phù hợp tăng theo số CV tìm kiếm.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Duy nhất tại tuyendungso1 có chính sách bảo hành dịch vụ với CV sai thông tin.</li>
+                            </ul>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#" class="btn text-white">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CV đề xuất -->
+                <div class="page5-wapper d-flex flex-column flex-md-row justify-content-around align-items-center py-5">
+                    <div class="col-12 col-md-6 page5-wapper__content">
+                        <div class="content-title">
+                            <h1>CV đề xuất</h1>
+                        </div>
+                        <div class="content-list py-5">
+                            <ul class="list-unstyled">
+                                <li class="pb-4" style="font-size: 22px;"> Đa dạng hóa nguồn CV ứng viên mà không cần mất công tìm kiếm ứng viên.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Tiết kiệm thời gian tuyển dụng nhân sự.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Tỷ lệ ứng viên phù hợp lên đến 40%.</li>
+                                <li class="pb-0" style="font-size: 22px;"> Dịch vụ có cam kết CV đang tìm kiếm công việc.</li>
+                            </ul>
+                        </div>
+                        <div class="card-btn pb-5">
+                            <a href="#" class="btn text-white">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </a>
+                        </div>    
+                    </div>
+                    <div class="col-12 col-md-6 page5-wapper__img text-center ">
+                        <img src="../assets/img/page5-search.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <!-- Top Branding -->
+                <div class="page5-wapper d-flex flex-column flex-md-row justify-content-around align-items-center py-5 mt-5">
+                    <div class="col-12 col-md-6 page5-wapper__img text-center">
+                        <img src="../assets/img/page5-branding.png" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="col-12 col-md-6 page5-wapper__content ">
+                        <div class="content-title">
+                            <h1>Top Branding - Truyền thông thương hiệu hàng đầu</h1>
+                        </div>
+                        <div class="content-list pt-5">
+                            <ul class="list-unstyled">
+                                <li class="pb-4" style="font-size: 22px;"> Giúp thương hiệu, sản phẩm, dịch vụ, chương trình của doanh nghiệp được tiếp cận với hơn 5 triệu ứng viên tiềm năng trên tuyendungso1.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Chi phí hợp lý hơn so với các dịch vụ quảng cáo banner tương tự.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Hỗ trợ tư vấn, thiết kế banner chuyên nghiệp.</li>
+                                <li class="pb-4" style="font-size: 22px;"> Xây dựng trang tuyển dụng uy tín, giúp doanh nghiệp tìm kiếm ứng viên, tuyển dụng hiệu quả.</li>
+                            </ul>
+                        </div>
+                        <div class="card-btn">
+                            <ba href="#" class="btn text-white">Tư vấn tuyển dụng miễn phí <img src="/../assets/img/arrow_right-icon.jpg" alt=""> </ba>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page6 -->
+            <div class="page6 mt-5" style="background-color: var(--background-color);">
+                <div class="page6-content col-12 col-md-12 ">
+                    <div class="page6-content d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="page6-sub__title pt-5 py-2 text-center" style="color: var(--primary-color);">FIGURES</h4>
+                        <h1 class="page6-title pb-3 display-4 text-center" style=" font-weight: 500;">Những con số của trang tuyển dụng vieclamso1</h1>
+                    </div>
+                    <div class="col-12 page6-card mb-1 mt-3 d-flex flex-wrap justify-content-around align-items-stretch">
+                        <!-- card 1 -->
+                        <div class="col-12 col-md-3 border d-flex flex-column my-3 w-100" style="border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center display-3" style="color: var(--primary-color);">
+                                <h1 style="font-weight: 650;">2.100.000+</h1>
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Ứng viên đang bật tìm việc trung bình/thời điểm</p>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-12 col-md-3 border d-flex flex-column my-3 w-100" style="border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center display-3" style="color: var(--primary-color);">
+                                <h1 style="font-weight: 650;">200.000+</h1>
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Doanh nghiệp tuyển dụng sử dụng dịch vụ tuyển dụng hiệu quả của vieclamso1</p>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="col-12 col-md-3 border d-flex flex-column my-3 w-100" style="border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center display-3" style="color: var(--primary-color);">
+                                <h1 style="font-weight: 650;">540.000+</h1>
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Nhà tuyển dụng sử dụng thường xuyên để đăng tin tuyển dụng, tìm kiếm ứng viên tiềm năng chỉ với những thao tác đơn giản, nhanh gọn</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 page6-card mb-4 d-flex flex-wrap justify-content-around align-items-stretch">
+                        <!-- card 4 -->
+                        <div class="col-12 col-md-3 border d-flex flex-column my-3 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center display-3" style="color: var(--primary-color); " >
+                                <h1 style="font-weight: 650;">200.000+</h1>
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Ứng viên tạo mới tài khoản trên vieclamso1
+                                    mỗi tháng</p>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="col-12 col-md-3 border d-flex flex-column my-3 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center display-3" style="color: var(--primary-color); " >
+                                <h1 style="font-weight: 650;">5.400.000+</h1>
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Lượt ứng viên truy cập hàng tháng, là một
+                                    trong những trang tuyển dụng có lượng
+                                    truy cập lớn nhất tại Việt Nam tại thời điểm
+                                    này.</p>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="col-12 col-md-3 border d-flex flex-column my-3 w-100" style=" border-radius: 20px; background-color: #FFFFFF; ">
+                            <div class="card-title pt-5 pb-2 text-center display-3" style="color: var(--primary-color); " >
+                                <h1 style="font-weight: 650;">2.100.000+</h1>
+                            </div>
+                            <div class="card-content mx-4 text-center" style="font-size: 28px; font-weight: 400;">
+                                <p>Ứng viên tiềm năng, trong đó có 50% là
+                                    ứng viên có kinh nghiệm từ 3 năm trở lên</p>
+                            </div>
+                        </div>   
+                    </div>                 
+                </div>
+            </div>
+            <!-- page7 -->
+            <div class="page7 pb-5" style="background-color: var(--background-color); ">
+                <div class="page7-content mx-4 border d-flex flex-column align-items-center position-relative" style="background-image: linear-gradient( to right, #135D00, #20A000); height: 900px;">
+                    <div class="page7-content__title d-flex flex-column justify-content-center align-items-center text-white py-5">
+                        <h1 class="page7-title py-3 display-4 text-center " style=" font-weight: 500;">Đâu là giải pháp phù hợp cho doanh nghiệp của bạn?</h1>
+                        <p class="page7-text text-center" style="font-size: 28px;">Hãy để lại thông tin và các chuyên viên tư vấn tuyển dụng của Vieclamso1 sẽ liên hệ ngay với bạn</p>
+                    </div>
+                    <div class="page7-wapper col-12 col-md-10 d-md-flex align-items-stretch justify-content-center position-absolute" style="top: 45%; let: 0; ">
+                        <img class="col-md-5 p-0 img-fluid d-none d-lg-flex" style=" border-radius: 20px 0 0 20px;" src="../assets/img/page7.png" alt="" >
+                        <form class=" col-12 col-md-5 p-sm-5 page7-wapper__content d-flex flex-column justify-content-start" style="background-color: white; border-radius: 0 20px 20px 0;" action="">
+                            <h1 class="pt-5 pb-2 display-5 " style="color: var(--primary-color);">Đăng ký nhận tư vấn</h1>
+
+                            <label for="name" style="font-size: 20px; font-weight: 500;">Họ và tên</label>
+                            <div class="form-group d-flex flex-column">
+                                <img class="img-fluid" style="max-width: 100%;" height="auto" src="/../assets/img/user.png" alt="">
+                                <input type="text" class="py-2" id="name" placeholder="Nhập họ và tên" width="100%">
+                            </div>
+
+                            <label for="email" style="font-size: 20px; font-weight: 500;">Email</label>
+                            <div class="form-group d-flex flex-column">
+                                <img class="img-fluid" style="max-width: 100%;" height="auto" src="/../assets/img/email.png" alt="">
+                                <input type="email" class="py-2" id="email" placeholder="Nhập email" width="100%">
+                            </div>
+
+                            <label for="phone" style="font-size: 20px; font-weight: 500;">Số điện thoại</label>
+                            <div class="form-group d-flex flex-column">
+                                <img class="img-fluid" style="max-width: 100%;" height="auto" src="/../assets/img/phone.png" alt="">
+                                <input class="py-2" type="text" id="phone" placeholder="Nhập số điện thoại" width="100%">
+                            </div>
+
+                            <label for="phone" style="font-size: 20px; font-weight: 500;">Tỉnh/Thành phố</label>
+                                <div class="form-group d-flex flex-column pl-5 border py-2 pr-2">
+                                    <img class="img-fluid" style="max-width: 100%;" height="auto" src="/../assets/img/city.png" alt="">
+                                    <select id="city" width="100%" style="border: 1px solid #ced4da;">
+                                        <option value="">Chọn tỉnh/Thành phố</option>
+                                        <option value="HCM">Hồ Chí Minh</option>
+                                        <option value="HN">Hà Nội</option>
+                                    </select>
+                                </div>
+
+                            <label for="phone" style="font-size: 20px; font-weight: 500;">Nhu cầu tư vấn</label>
+                            <div class="form-group d-flex flex-column pl-5 border py-2 pr-2">
+                                <img class="img-fluid" style="max-width: 100%;" height="auto" src="/../assets/img/city.png" alt="">
+                                <select id="support" width="100%" style="border: 1px solid #ced4da;"> 
+                                    <option value="">Chọn nhu cầu tư vấn</option>
+                                    <option value="">CV</option>
+                                </select>
+                            </div>
+
+                            <div class=" py-3 d-flex justify-content-center align-items-center">
+                                <button class="col-10 btn px-4 py-2 text-white d-flex flex-row align-items-center justify-content-center" style="font-size: 20px; background-color: var(--primary-color);"> <img class="pr-3" src="/../assets/img/arrow-form.png" alt=""> Gửi yêu cầu tư vấn </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- page8 -->
+            <div class="page8 pb-5" style="background-color: var(--background-color); padding-top: 280px;">
+                <div class="page8-content__title d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="page8-sub__title pt-5 py-2 text-center" style="color: var(--primary-color);">VALUES</h4>
+                    <h1 class="page8-title py-3 display-4 text-center" style=" font-weight: 500;">Giá trị khi sử dụng vieclamso1 Smart Recruitment Platform</h1>
+                </div>
+                <div class="page8-content__card d-flex flex-md-row flex-column justify-content-around align-items-stretch">
+                    <div class="page8-content__card1 col-12 col-md-5 p-5 m-md-5 m-0 d-flex flex-column" style=" background-color: white; border-radius: 20px;" >
+                        <div class="page8__content__card1__img pb-5">
+                            <img src="/../assets/img/page8-card1.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="page8__content__card1__title pt-5">
+                            <h1 class="page3-title py-2 pl-3" style="border-left:9px solid var(--primary-color);">Đối với Doanh nghiệp</h1>
+                        </div>
+                        <div>
+                            <div class="wapper__content__card1__list pt-5">
+                                <ul class="list-unstyled">
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Đưa tuyển dụng trở thành lợi thế cạnh tranh của doanh nghiệp:<strong> gia tăng cơ hội tuyển đúng người</strong>, giúp thúc đẩy hoạt động kinh doanh hiệu quả, hướng đến chuyển đổi số thành công.</p> </li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Chuẩn hóa toàn bộ quy trình tuyển dụng thống nhất và bài bản với <b>Talent Acquisition Funnel.</b></p> </li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Xây dựng <strong> thương hiệu tuyển dụng </strong> uy tín, chuyên nghiệp.</p> </li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p><strong>Tiết kiệm</strong> thời gian, chi phí cho hoạt động tuyển dụng.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page8-content__card2 col-12 col-md-5 p-5 my-5 mr-md-5 ml-md-n5 m-0 d-flex flex-column" style="padding: 60px; background-color: white; border-radius: 20px;">
+                        <div class="page8__content__card2__img pb-5">
+                            <img src="/../assets/img/page8-card2.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="page8__content__card2__title pt-5">
+                            <h1 class="page3-title py-2 pl-3" style="border-left:9px solid var(--primary-color);">Đối với Doanh nghiệp</h1>
+                        </div>
+                        <div>
+                            <div class="page8__content__card2__list pt-5">
+                                <ul class="list-unstyled">
+                                    <li class="pb-4" style="font-size: 22px;"> <p> <strong>Quản lý tập trung</strong> tất cả các hoạt động tạo ra hiệu quả cho mỗi vị trí tuyển dụng theo chiến dịch tuyển dụng.</p></li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Đăng tin tuyển dụng, tạo & quản lý <strong>nguồn ứng viên</strong> hiệu quả.</p></li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Đánh giá ứng viên toàn diện dựa trên dữ liệu cụ thể, giúp định tuyển đưa ra quyết dụng chính xác, <strong>giảm tỷ lệ tuyển sai người.</strong></p></li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Có <strong>tư duy ứng dụng công nghệ</strong> trong tuyển dụng, xử lý nghiệp vụ tuyển dụng nhanh chóng, thông minh, tổ chức công việc hiệu quả.</p></li>
+                                    <li class="pb-4" style="font-size: 22px;"> <p>Chủ động lên kế hoạch & <strong> tối ưu chi phí tuyển dụng</strong>  theo các số liệu đo lường.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!-- page9 -->
+            <div class="page9 col-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="page9-content__title d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="page9-sub__title pt-5 py-2 text-center" style="color: var(--primary-color);">ABOUT US </h4>
+                    <h1 class="page9-title py-3 display-4 text-center" style=" font-weight: 500;">Về chúng tôi</h1>
+                </div>
+                <div class="page9-wapper col-12 col-md-11 mx-5 border d-flex flex-md-row flex-column align-items-center" style="border-radius: 20px; background-color: var(--background-color)">
+                    <div class="page9-content col-12 col-md-6">
+                        <p style="font-size: 23px; line-height: 60px ;">
+                            Việc làm số 1 Việt Nam là công ty hàng đầu trong lĩnh vực HR Tech tại Việt Nam, xoay
+                            quanh hệ sinh thái nhân sự với 4 sản phẩm chủ lực: <br>
+
+                            Nền tảng tuyển dụng thông minh Việc làm số 1, Nền tảng thiết lập và đánh giá năng
+                            lực nhân viên TestCenter, Nền tảng quản lý và gia tăng trải nghiệm nhân viên
+                            HappyTime và Giải pháp quản trị tuyển dụng hiệu suất cao SHring. <br>
+
+                            Việc làm số 1 đang sở hữu hơn 6,9 triệu người dùng, 190.000 khách hàng lớn và đã kết
+                            nối thành công hàng triệu lượt ứng viên mỗi năm tới các doanh nghiệp phù hợp. <br>
+
+                            Thông qua việc nghiên cứu và không ngừng phát triển năng lực công nghệ lõi vượt trội
+                            (đặc biệt là ứng dụng sâu Trí tuệ nhân tạo - AI), Tuyển dụng số 1 kỳ vọng mang tới các
+                            giải pháp nhân sự hiệu quả hơn nữa trong tương lai: tối ưu các trải nghiệm số cho ứng
+                            viên, từ đó giúp doanh nghiệp thu hút và giữ chân nhân tài, hướng tới một nền kinh tế
+                            Việt Nam phát triển bền vững.
+                        </p>    
+                    </div>
+                    <div class="page9-image col-12 col-md-6">
+                        <img src="../assets/img/page9.jpg" alt="" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- page10 -->
+            <div class="page10 mt-3 d-flex flex-column" style="background-color: var(--background-color)">
+                <div class="page10-content__title mb-2 d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="page10-sub__title pt-5 pt-2 text-center" style="color: var(--primary-color);">OUR AWARDS</h4>
+                    <h1 class="page10-title pt-3 display-4 text-center" style=" font-weight: 500;">Giải thưởng tiêu biểu</h1>
+                </div>
+                <div class="page10-card col-12 col-md-12 mt-3 d-flex flex-md-row flex-column justify-content-center align-items-stretch" style="background-color: var(--background-color)">
+                    <!-- card1 -->
+                    <div class=" border mx-md-2 p-4 my-2 w-100 p-md-4 " style="background-color: white; border-radius: 20px; ">
+                        <div class="card__list-image ">
+                            <img class="img-fluid" src="../assets/img/page10-card1,2.jpg" alt="" width="100%" height="100%" >
+                        </div>
+                        <div class="card__list-title pt-4">
+                            <h4 style="color: var(--primary-color);">BRAND</h4>
+                        </div>
+                        <div class="card__list-text pb-4" >
+                            <h3 class="py-3" style=" font-weight: 500;">Top 100 Thương hiệu
+                                hàng đầu Việt Nam 2020
+                                tại Vietnam Top Brands
+                                do HTV tổ chức</h3>
+                        </div>
+                        <div class="card__list-btn pb-5 ">
+                            <a class="btn" href="#" style="background-color: var(--primary-color); color: white; font-size: 20px;">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class=" border mx-md-2 p-4 my-2 w-100 p-md-4" style="background-color: white; border-radius: 20px; ">
+                        <div class="card__list-image">
+                            <img class="img-fluid" src="../assets/img/page10-card1,2.jpg" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card__list-title pt-4">
+                            <h4 style="color: var(--primary-color);">STARTUP</h4>
+                        </div>
+                        <div class="card__list-text pb-4" >
+                            <h3 class="py-3" style=" font-weight: 500;">Top 15 Startups được
+                                Google lựa chọn tham
+                                gia Google for Startups
+                                Accelerator: Southeast
+                                Asia</h3>
+                        </div>
+                        <div class="card__list-btn pb-5">
+                            <a class="btn" href="#" style="background-color: var(--primary-color); color: white; font-size: 20px;">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class=" border mx-md-2 p-4 my-2 w-100 p-md-4" style="background-color: white; border-radius: 20px; ">
+                        <div class="card__list-image">
+                            <img class="img-fluid" src="../assets/img/page10-card3.jpg" alt="" style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="card__list-title pt-4">
+                            <h4 style="color: var(--primary-color);">TECH</h4>
+                        </div>
+                        <div class="card__list-text pb-4" >
+                            <h3 class="py-3" style=" font-weight: 500;">Bộ đôi giải thưởng Sản
+                                phẩm công nghệ số
+                                Make in Viet Nam 2022</h3>
+                        </div>
+                        <div class="card__list-btn by-5">
+                            <a class="btn" href="#" style="background-color: var(--primary-color); color: white; font-size: 20px;">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class=" border mx-md-2 p-4 my-2 w-100 p-md-4 " style="background-color: white; border-radius: 20px; ">
+                        <div class="card__list-image">
+                            <img class="img-fluid" src="../assets/img/page10-card4.jpg" alt="" style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="card__list-title pt-4">
+                            <h4 style="color: var(--primary-color);">BRAND</h4>
+                        </div>
+                        <div class="card__list-text pb-4">
+                            <h3 class="py-3" style=" font-weight: 500;">Cú đúp giải thưởng tại Lễ
+                                vinh danh Top 10 doanh
+                                nghiệp CNTT Việt Nam
+                                2023</h3>
+                        </div>
+                        <div class="card__list-btn by-5">
+                            <a class="btn" href="#" style="background-color: var(--primary-color); color: white; font-size: 20px;">Đọc thêm</a>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+            <!-- page11 -->
+            <div class="page11 d-flex flex-column" style="background-color: var(--background-color)">
+                <div class="page11-content__title mb-2 d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="page11-sub__title pt-5 pt-2 text-center" style="color: var(--primary-color);">OUR PARTNERS</h4>
+                    <h1 class="page11-title pt-3 display-4 text-center" style=" font-weight: 500;">Khách hàng tiêu biểu và đối tác truyền thông của Vieclamso1</h1>
+                </div>
+                <div class="page11-card col-12 col-md-12 mt-3 d-flex flex-md-row flex-column justify-content-center align-items-stretch" style="background-color: var(--background-color)">
+                    <!-- col1 -->
+                    <div class=" w-100 mx-md-4 my-2 p-4 p-md-5 " style="background-color: white; border-radius: 20px; ">
+                        <div class="title pt-5">
+                            <h1 class="page2-title py-1 pl-3" style="border-left:7px solid var(--primary-color);">Đối với Doanh nghiệp </h1>
+                        </div>
+                        <div class="brand">
+                            <div class="brand-1 d-flex justify-content-between align-items-center">
+                                <img class="col-4 img-fluid" src="/../assets/img/FPT-edu.png" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/teky.png" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/shinhan-bank.png" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="brand-2 d-flex justify-content-between align-items-center">
+                                <img class="col-4 img-fluid" src="/../assets/img/edupia.png" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/viettel.png" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/techombank.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col2 -->
+                    <div class=" w-100 mx-md-4 my-2 p-4 p-md-5 " style="background-color: white; border-radius: 20px; ">
+                        <div class="title pt-5">
+                            <h1 class="page2-title py-1 pl-3" style="border-left:7px solid var(--primary-color);">Đối với Nhà tuyển dụng</h1>
+                        </div>
+                        <div class="brand">
+                            <div class="brand-1 d-flex justify-content-between align-items-center">
+                                <img class="col-4 img-fluid" src="/../assets/img/genk.jpg" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/vtc10.jpg" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/vtv1.jpg" alt="" width="100%" height="100%">
+                            </div>
+                            <div class="brand-2 d-flex justify-content-between align-items-center">
+                                <img class="col-4 img-fluid" src="/../assets/img/cafebiz.jpg" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/vtv2.jpg" alt="" width="100%" height="100%">
+                                <img class="col-4 img-fluid" src="/../assets/img/vtv6.jpg" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page12 -->
+            <div class="page12 py-5 d-flex flex-column" style="background-color: var(--background-color)">
+                <div class="mx-4">
+                    <div class="page12__title pt-5 pl-3">
+                        <h1 class="page2-title py-1 pl-4" style="border-left:7px solid var(--primary-color);">Việc làm số 1 Việt Nam mong muốn được hợp tác cùng Doanh nghiệp </h1>
+                        <p class="py-4" style="font-size: 28px; font-weight: 400;">
+                            Đội ngũ hỗ trợ của Việc làm số 1 luôn sẵn sàng để tư vấn giải pháp tuyển dụng và đồng hành cùng các Quý nhà tuyển dụng</p>
+                    </div>
+                    <div class="page12__content col-12 col-md-12 d-flex flex-md-row flex-column justify-content-center align-items-stretch">
+                        <!-- col1 -->
+                        <div class="page12__content__north w-100 d-flex flex-column align-items-start justify-content-start">
+                            <h3 class="py-2">Hotline Tư vấn Tuyển dụng miền Bắc</h3>
+                            <div class="infor1 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style=" max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0944 876 109</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Nguyễn Thị Thu Hương</p>      
+                                </div>
+                            </div>   
+                            <div class="infor2 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style=" max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0975 923 878</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Hoàng Thị Tuyết</p>      
+                                </div>
+                            </div>   
+                            <div class="infor3 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style=" max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0343 439 988</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Lê Thị Thanh Tâm</p>      
+                                </div>
+                            </div>   
+                            <div class="infor4 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style=" max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0332 678 613</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Đinh Thị Huyền</p>      
+                                </div>
+                            </div>   
+                            <div class="infor5 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style=" max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0339 317 722</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Nguyễn Thị Trang</p>      
+                                </div>
+                            </div>   
+                        </div>
+                        <!-- col2 -->
+                        <div class="page12__content__north  w-100 d-flex flex-column align-items-start " >
+                            <h3 class="py-2">Hotline Tư vấn Tuyển dụng miền Nam</h3>
+                            <div class="col2_infor1 d-flex w-75 p-md-5 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0902 867 167</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Đặng Thị Hoàng Dung</p>      
+                                </div>
+                            </div>   
+                            <div class="infor2 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="atuo">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0396 932 311</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Lê Thị Mỹ Trang</p>      
+                                </div>
+                            </div>   
+                            <div class="infor3 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="atuo">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0976 593 426</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Trần Ngọc Quế Anh</p>      
+                                </div>
+                            </div>   
+                            <div class="infor4 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="atuo">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0978 526 627</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Nguyễn Thùy Dương</p>      
+                                </div>
+                            </div>   
+                            <div class="infor5 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-green.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="atuo">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: var(--primary-color);" >0906 339 965</h4>
+                                    <p class="m-0" style="font-size: 25px; font-weight: 400;">Nguyễn Thị Hoài Ân</p>      
+                                </div>
+                            </div>  
+                        </div>
+                        <!-- col3 -->
+                        <div class="page12__content__north w-100 d-flex flex-column align-items-start" >
+                            <h3 class="py-2">Hỗ trợ khách hàng và khiếu nại dịch vụ</h3>
+                            <div class="col3_infor1 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white; width: 90%;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-orange.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; " height="atuo">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: #FCA530;" >(024) 7107 9799</h4>
+                                </div>
+                            </div>   
+                            <div class="infor2 d-flex w-75 p-md-5 p-2 my-4 justify-content-start align-items-center" style="border-radius: 20px; background-color: white; width: 90%;">
+                                <div class="page12-phone">
+                                    <img class="img-fluid" src="/../assets/img/callphone-orange.png" alt="" style="max-width: 100%; background-color: #EDFFE8; border-radius: 50%; "height="auto">
+                                </div>
+                                <div class="pl-4">
+                                    <h4 style="color: #FCA530;" >0862 69 19 29</h4>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page13 -->
+            <div class="page13 col-12 col-md-12 pt-5 d-flex flex-lg-row flex-column justify-content-between align-items-start ">
+                <!-- COL1 -->
+                <div class="d-flex pb-5 mx-2 flex-column align-items-start justify-content-center ">
+                    <div class="text-center pb-4 w-100">
+                        <a href="#"><img src="/../assets/img/logo-icon.jpg" alt="" width="100%" height="100%"></a>
+                    </div>
+                    <div class="pb-4">
+                        <h1 class="des-brand font-weight-bold ">Kênh thông tin - việc làm số 1 tại Việt Nam</h1>
+                    </div>
+                    <div class=" d-flex justify-content-around w-100 align-items-center py-3">
+                        <a href="#"><img class="img-fluid " src="/../assets/img/logo-gg.jpg" alt="" width="140%" height="100%"></a>
+                        <a href="#"><img class="img-fluid " src="/../assets/img/logo-security.jpg" alt="" width="140%" height="100%"></a>
+                        <a href="#"><img class="img-fluid " src="/../assets/img/logo-registed.jpg" alt="" width="140%" height="100%"></a>  
+                    </div>
+                    <div class="py-4">
+                        <p style="font-size: 28px; font-weight: 500;">Ứng dụng tải xuống</p>
+                    </div>
+                    <div class="w-100 d-flex">
+                        <a href="#"><img class="img-fluid border" style="border-radius: 10px;" src="/../assets/img/logo-appstore.jpg" alt="" width="100%" height="100%"></a>
+                        <a href="#"><img class="img-fluid border" style="border-radius: 10px;" src="/../assets/img/logo-ggplay.jpg" alt="" width="100%" height="100%"></a>
+                    </div>    
+                </div>
+                <!-- COL2-->
+                <div class="mx-2 py-md-4  d-flex flex-column align-items-start justify-content-center ">
+                    <div class="col2-title">
+                        <h1>Về Vieclamso1</h1>
+                    </div>
+                    <div class="col2-link">
+                        <ol class="list-unstyled pt-4" style="font-size: 23px; font-weight: 400; color: black;">
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Góc báo chí</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Quy chế hoạt động</a></li>
+                            <li><a href="#">Chương trình Rewards</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- COL3 -->  
+                <div class="mx-2 py-md-4 d-flex flex-column align-items-start justify-content-center ">
+                    <div class="col2-title">
+                        <h1>Ứng viên</h1>
+                    </div>
+                    <div class="col2-link">
+                        </style>
+                        <ol class="list-unstyled pt-4" style="font-size: 23px; font-weight: 400; color: black;">
+                            <li><a href="#">Tìm việc làm</a></li>
+                            <li><a href="#">Khóa học</a></li>
+                            <li><a href="#">Trắc nghiệm MBTI</a></li>
+                            <li><a href="#">Hướng dẫn viết CV</a></li>
+                            <li><a href="#">Tư vấn sửa CV</a></li>
+                            <li><a href="#">Thiết kế CV</a></li>
+                            <li><a href="#">Dịch CV</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- COL4 -->
+                <div class="mx-2 py-md-4 d-flex flex-column align-items-start justify-content-center">
+                    <div class="col2-title">
+                        <h1>Đối tác</h1>
+                    </div>
+                    <div class="col2-link">
+                        <ol class="list-unstyled pt-4" style="font-size: 23px; font-weight: 400; color: black;">
+                            <li><a href="#">Doanh nghiệp</a></li>
+                            <li><a href="#">Trường đại học</a></li>
+                            <li><a href="#">Các CLB, đoàn thể</a></li>
+                        </ol>
+                    </div>
+                    <div class="page13__social d-flex w-100 my-md-5 py-5">
+                        <a href="#"><img class="img-fluid pr-3" src="/../assets/img/facebook.png" alt="" width="70px" height="70px"></a>
+                        <a href="#"><img class="img-fluid pr-3" src="/../assets/img/twitter.png" alt="" width="70px" height="70px"></a>
+                        <a href="#"><img class="img-fluid pr-3" src="/../assets/img/linkedin.png" alt="" width="70px" height="70px"></a>
+                        <a href="#"><img class="img-fluid pr-3" src="/../assets/img/youtube.png" alt="" width="70px" height="70px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container col-12 col-md-12">
+                <div class="footer__wapper border-top px-lg-5 pt-lg-5 p-2 d-flex flex-xl-row flex-column justify-content-between align-items-start">
+                    <div class="footer__inforCompany py-2 d-flex flex-column justify-content-start ">
+                        <h2 class="footer__inforCompany-title">Công ty Cổ phần Việc làm số 1 Việt Nam</h2>
+                        <div class="footer__inforCompany-icon1 pt-3 d-flex justify-content-start align-items-center w-100">
+                            <img class="img-fluid pr-3" style="max-width: 100%;" height="auto" src="/../assets/img/footer-calc.jpg" alt="">
+                            <p class="m-0" style="font-size: 20px;"> Giấy phép đăng ký kinh doanh số: <span style="font-weight: 500;"> 0107307178 </span></p>
+                        </div>
+                        <div class="footer__inforCompany-icon2 pt-3 d-flex justify-content-start align-items-center w-100">
+                            <img class="img-fluid pr-3" style="max-width: 100%;"  height="auto" src="/../assets/img/footer-book.jpg" alt="">
+                            <p class="m-0" style="font-size: 20px;"> Giấy phép hoạt động dịch vụ việc làm số: <span style="font-weight: 500;"> 18/SLĐTBXH GP </span></p>
+                        </div>
+                        <div class="footer__inforCompany-icon3 pt-3 d-flex justify-content-start align-items-center w-100">
+                            <img class="img-fluid pr-3" style="max-width: 100%;" height="auto" src="/../assets/img/footer-address.jpg" alt="">
+                            <p class="m-0" style="font-size: 20px;"> Trụ sở HN: <span style="font-weight: 500;">Tòa FS GoldSeason số 47 Nguyễn Tuân, P.Thanh Xuân Trung, Q.Thanh Xuân, Hà Nội </span></p>
+                        </div>
+                        <div class="footer__inforCompany-icon4 pt-3 d-flex justify-content-start align-items-center w-100">
+                            <img class="img-fluid pr-3" style="max-width: 100%;"  height="auto" src="/../assets/img/footer-address.jpg" alt="">
+                            <p class="m-0" style="font-size: 20px;"> Chi nhánh HCM: <span style="font-weight: 500;">Tòa nhà Dali, 24C Phan Đăng Lưu, P.6, Q.Bình Thạnh, TP HCM </span></p>
+                        </div>
+                    </div>
+                    <div class="footer__QR-code py-2 d-flex flex-column align-items-center justify-content-center">
+                        <img class="img-fluid" style="max-width: 100%;" height="auto" src="/../assets/img/footer-QR.jpg" alt="">
+                        <h5 class="m-0" style="color: var(--primary-color);">vieclamso1.vn</h5>
+                    </div>
+                </div>
+                <div class="footer__title__HR col-12 col-md-12">
+                    <h4>Hệ sinh thái HR Tech của Vieclamso1</h4>
+                </div>
+                <div class="footer__app__HR col-12 col-md-12 py-3 d-flex flex-lg-row flex-column justify-content-center align-items-center text-white">
+                    <div class="my-2 d-flex justify-content-between align-items-center border p-4 w-100" style="border-radius: 10px; background-image: linear-gradient( to right, #135D00, #20A000);">
+                        <img class="img-fluid pr-4 " style="max-width: 100%;" height="auto" src="/../assets/img/footer-icon1.jpg" alt="">
+                        <p class="m-0" style="font-size: 20px;"> Nền tảng công nghệ tuyển dụng thông minh <br>Vieclamso1</p>
+                    </div>
+                    <div class="my-2 d-flex justify-content-between align-items-center border p-4 w-100" style="border-radius: 10px; background-color: #FF8A00;">
+                        <img class="img-fluid pr-4 " style="max-width: 100%;" height="auto" src="/../assets/img/footer-icon2.jpg" alt="">
+                        <p class="m-0" style="font-size: 20px;"> Nền tảng quản lý và gia tăng trải nghiệm nhân viên <br>HappyTime.vn</p>
+                    </div>
+                    <div class="my-2 d-flex justify-content-between align-items-center border p-4 w-100" style="border-radius: 10px; background-image: linear-gradient( to right, #003E52, #00BBF6);">
+                        <img class="img-fluid pr-4 " style="max-width: 100%;" height="auto" src="/../assets/img/footer-icon3.jpg" alt="">
+                        <p class="m-0" style="font-size: 20px;"> Nền tảng thiết lập và đánh giá năng lực nhân viên <br>TestCenter.vn</p>
+                    </div>
+                    <div class="my-2 d-flex justify-content-between align-items-center border p-4 w-100" style="border-radius: 10px; background-color: #21A400;">
+                        <img class="img-fluid pr-4 " style="max-width: 100%;" height="auto" src="/../assets/img/footer-icon4.jpg" alt="">
+                        <p class="m-0" style="font-size: 20px;"> Giải pháp quản trị tuyển dụng hiệu suất cao <br>SHiring.ai</p>
+                    </div>
+                </div>
+                <div class="footer__end d-flex justify-content-center align-items-center">
+                    <p style="font-size: 20px; font-weight: 500;"> &copy; 2014 2024 Vieclamso1 Vietnam JSC. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

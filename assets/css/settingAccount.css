@@ -1,0 +1,55 @@
+:root{
+    --primary-color: #2CE900;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+section .section__wrapper__content__settingInfor{
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+section .section__wrapper__content__settingInfor span{
+    color: red;
+}
+
+section .section__wrapper__content__settingInfor-formInfor .form-group{
+    padding-bottom: 20px;
+}
+
+section .section__wrapper__content__settingInfor-formInfor label{
+    margin-bottom: 10px;    
+}
+
+section .section__wrapper__content__settingInfor-formInfor #name{
+    font-weight: 400;
+}
+
+section .section__wrapper__content__settingInfor-formInfor input[type="text"],input[type="email"]{
+    padding-left: 30px;
+    font-size: 22px;
+    color: black;
+}
+
+section .section__wrapper__content__settingInfor-btnSave{
+    padding: 40px 0;
+}
+
+section .section__wrapper__content__settingInfor-btnSave .btn{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 14px 45px;
+    border-radius: 8px;
+}

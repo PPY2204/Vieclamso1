@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài khoản</title>
+    <script
+      src="https://kit.fontawesome.com/d94666e29a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <script src="../assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="header">
+        <div class="header__wrapper d-flex flex-md-row py-4 justify-content-between align-items-center">
+          <div class="header__wrapper__logo col-7 pl-4 pr-0 col-lg-3 d-flex flex-column ">
+            <div class="header__wrapper__logo-brand pb-3 ">
+              <img src="../assets/img/logo-icon.jpg" alt="" class="img-fluid" width="90%">
+            </div>
+            <div class="header__wrapper__logo-des">
+              <h5 class="font-weight-bold ">
+                Kênh thông tin - việc làm số 1 tại Việt Nam
+              </h5>
+            </div>
+          </div>
+          <div class="header__wrapper__navbar col-5 col-lg-6">
+            <nav class="navbar navbar-expand-lg p-0">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
+                <span class="navbar-toggler-icon"><img class="img-fluid" src="/assets/img/menu.png" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item px-2">
+                    <a href="#" class="nav-link active">Việc làm</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a href="#" class="nav-link">Hồ sơ & CV</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a href="#" class="nav-link">Công ty</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a href="#" class="nav-link">Công cụ</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a href="#" class="nav-link">Cẩm nang tuyển dụng</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="header__wrapper__right pl-0 col-lg-3 d-none d-lg-flex py-md-2 justify-content-between align-items-center">
+            <div class="header__wrapper__right-notification mx-2">
+              <img class="img-fluid" src="../assets/img/bell-active.png" alt=""/>
+            </div>
+            <div class="header__wrapper__right-note mx-1">
+              <img class="img-fluid" src="../assets/img/chatting.png" alt="" />
+            </div>
+            <div class="header__wrapper__right-account mx-1 d-flex justify-content-between align-items-center">
+              <div class="header__wrapper__right-account-avatar">
+                <img class="img-fluid" src="../assets/img/man.png" alt="" />
+              </div>
+              <div class="header__wrapper__right-account-name">
+                <h3>Nguyễn A</h3>
+              </div>
+              <span class="chevron-down"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section d-flex flex-column ">
+        <div class="section__wrapper d-md-flex">
+          <div class="section__wrapper__content col-8 pl-4 my-5">
+            <div class="section__wrapper__content-slider d-flex align-content-stretch">
+              <div class="section__wrapper__content-slider-left col-6 pl-5">
+                <div class="section__wrapper__content-slider-left-logo my-5 pt-4">
+                  <img src="../assets/img/logo-icon-login.png" alt="" width="55%">
+                </div>
+                <div class="section__wrapper__content-slider-left-title my-3">
+                  <h1>Dịch vụ tư vấn CV và định hướng tìm việc</h1>
+                </div>
+                <div class="section__wrapper__content-slider-left-des my-4">
+                  <p>Giải pháp giúp bạn chinh phục cơ hội việc làm mơ ước</p>
+                </div>
+                <div class="section__wrapper__content-slider-left-btn my-5">
+                  <a href="#">Tìm hiểu ngay</a>
+                </div>
+              </div>
+              <div class="section__wrapper__content-slider-right col-6 ">
+                <img src="../assets/img/slider-img-account.png" alt="" width="100%">
+              </div>
+            </div>
+            <!-- Add CV -->
+            <div class="section__wrapper__content-addedCV d-flex justify-content-between py-4">
+              <div class="section__wrapper__content-addedCV-title">
+                <h2>CV đã tạo trên Vieclamso1</h2>
+              </div>
+              <div class="section__wrapper__content-addedCV-CV text-center mr-5">
+                <div class="isNotAddCV">
+                  <img src="../assets/img/note_addedCV.png" alt="" width="100%">
+                </div>
+                <span>Bạn chưa tạo CV nào</span>
+              </div>
+              <div class="section__wrapper__content-addedCV-btnAddCV pl-4">
+                <button type="button" class="btn"><img src="../assets/img/plus.png" alt="" width="100%">Tạo mới</button>
+              </div>
+            </div>
+            <!-- Upload CV -->
+            <div class="section__wrapper__content-uploadedCV d-flex justify-content-between py-4">
+              <div class="section__wrapper__content-uploadedCV-title">
+                <h2>CV đã tải trên Vieclamso1</h2>
+              </div>
+              <div class="section__wrapper__content-uploadedCV-CV text-center mr-5 pt-4">
+                <div class="isNotUploadedCV">
+                  <img src="../assets/img/cloud-downloadCV.png" alt="">
+                </div>
+                <span>Bạn chưa tải lên CV nào</span>
+              </div>
+              <div class="section__wrapper__content-uploadedCV-btnUploadCV pl-4">
+                <a href="uploadCV_page.html" class="btn"><img src="../assets/img/upload.png" alt="" width="100%">Tải CV lên</a>
+              </div>
+            </div>
+            <!-- Profile CV-->
+            <div class="section__wrapper__content-profile d-flex justify-content-between py-4">
+              <div class="section__wrapper__content-profile-title pr-4 mr-4">
+                <h2>Vieclamso1 Profile</h2>
+              </div>
+              <div class="section__wrapper__content-profile-CV text-center mr-5 pt-4">
+                <div class="isNotAddCV">
+                  <img src="../assets/img/proflie-CV.png" alt="">
+                </div>
+                <span>Bạn chưa tạo Vieclamso1 Profile</span>
+              </div>
+              <div class="section__wrapper__content-profile-btnAddProfile pl-4">
+                <button type="button" class="btn"><img src="../assets/img/plus.png" alt="" width="100%">Tạo mới</button>
+              </div>
+            </div>
+            <div class="section__wrapper__content-job">
+              <div class="section__wrapper__content-job-title">
+                <h2>Việc làm phù hợp với bạn</h2>
+              </div>
+              <div class="section__wrapper__content-job-settingJob">
+                <p>Để nhận được gợi ý việc làm chính xác hơn, hãy <a href="#">tùy chỉnh cài đặt gợi ý việc làm</a>.</p>
+              </div>
+              <div class="section__wrapper__content-job-jobList d-flex mt-4">
+                <div class="section__wrapper__content-job-jobList-imgCompany mr-4">
+                  <img class="img-thumbnail" src="../assets/img/HOPO_company.png" alt="">
+                </div>
+                <div class="section__wrapper__content-job-jobList-inforJob ">
+                  <div class="section__wrapper__content-job-jobList-inforJob-top d-flex justify-content-between">
+                    <div class="section__wrapper__content-job-jobList-inforJob-top-desJob ">
+                      <h3>Nhân Viên Kinh Doanh / Tư Vấn Bán Hàng Phân
+                        Khúc Cao Cấp Phụ Kiện Cửa Nhôm Kính - Thu
+                        Nhập 15 20 Triệu</h3>
+                      <span class="section__wrapper__content-job-jobList-inforJob-nameCompany">CÔNG TY TNHH HOPO QUỐC TẾ</span>
+                    </div>
+                    <div class="section__wrapper__content-job-jobList-inforJob-top-salary">
+                      <span>15 - 20 triệu</span>
+                    </div>
+                  </div>
+                  <div class="section__wrapper__content-job-jobList-inforJob-bottom d-flex justify-content-between">
+                    <div class="section__wrapper__content-job-jobList-inforJob-bottom-note">
+                      <span>Hà Nội, Hồ Chí Minh</span>
+                      <span>Còn <span class="apply-deadline">10</span> ngày để ứng tuyển</span>
+                      <span>Cập nhật <span class="time-update">59 phút</span> trước</span>
+                    </div>
+                    <div class="section__wrapper__content-job-jobList-inforJob-bottom-btn">
+                      <button type="button" class="applyJob btn">Ứng tuyển</button>
+                      <span class="job-favourite"><i class="fa-regular fa-heart"></i></span>
+                      <button type="button" class="deleteJob border-0"><img src="../assets/img/trash.png" alt="" width="90%"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__wrapper__content-job-jobList d-flex mt-4">
+                <div class="section__wrapper__content-job-jobList-imgCompany mr-4">
+                  <img class="img-thumbnail" src="../assets/img/HOPO_company.png" alt="">
+                </div>
+                <div class="section__wrapper__content-job-jobList-inforJob ">
+                  <div class="section__wrapper__content-job-jobList-inforJob-top d-flex justify-content-between">
+                    <div class="section__wrapper__content-job-jobList-inforJob-top-desJob ">
+                      <h3>Nhân Viên Kinh Doanh / Tư Vấn Bán Hàng Phân
+                        Khúc Cao Cấp Phụ Kiện Cửa Nhôm Kính - Thu
+                        Nhập 15 20 Triệu</h3>
+                      <span class="section__wrapper__content-job-jobList-inforJob-nameCompany">CÔNG TY TNHH HOPO QUỐC TẾ</span>
+                    </div>
+                    <div class="section__wrapper__content-job-jobList-inforJob-top-salary">
+                      <span>15 - 20 triệu</span>
+                    </div>
+                  </div>
+                  <div class="section__wrapper__content-job-jobList-inforJob-bottom d-flex justify-content-between">
+                    <div class="section__wrapper__content-job-jobList-inforJob-bottom-note">
+                      <span>Hà Nội, Hồ Chí Minh</span>
+                      <span>Còn <span class="apply-deadline">10</span> ngày để ứng tuyển</span>
+                      <span>Cập nhật <span class="time-update">59 phút</span> trước</span>
+                    </div>
+                    <div class="section__wrapper__content-job-jobList-inforJob-bottom-btn">
+                      <button type="button" class="applyJob btn">Ứng tuyển</button>
+                      <span class="job-favourite"><i class="fa-regular fa-heart"></i></span>
+                      <button type="button" class="deleteJob border-0"><img src="../assets/img/trash.png" alt="" width="90%"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__wrapper__content-job-allSuitableJob text-center py-4">
+                <button type="button" class="btn" >Xem tất cả việc làm phù hợp</button>
+              </div>
+            </div>
+          </div>
+          <div class="section__wrapper__aside col-4 pr-4 my-5">
+            <!-- Aside Top -->
+            <div class="section__wrapper__aside-top">
+              <!-- Account Status-->
+              <div class="section__wrapper__aside-top-account d-flex justify-content-start align-items-stretch">
+                <div class="section__wrapper__aside-top-account-avatar">
+                  <img src="../assets/img/man.png" alt="" width="100%">
+                  <label class="setting-Avatar">
+                    <img src="../assets/img/photo-camera-interface-symbol-for-button.png" alt="">
+                    <!-- <input type="file" id="uploadImage"> -->
+                  </label>
+                </div>
+                <div class="section__wrapper__aside-top-account-status">
+                  <p>Chào bạn trở lại,</p>
+                  <h2>Nguyễn A</h2>
+                  <span class="section__wrapper__aside-top-account-status-auth">Tài khoản đã xác thực</span>
+                  <div class="section__wrapper__aside-top-account-status-upgradeAcc">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i>Nâng cấp tài khoản</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Job Search Status -->
+              <div class="section__wrapper__aside-top-searchStatus">
+                <form action="">
+                  <div class="section__wrapper__aside-top-searchStatus-job">
+                    <input type="checkbox" id="jobSearchStatus" >
+                    <label for="jobSearchStatus" class="jobSearchStatus"></label>
+                    <span class="jobSearchStatus-title">Đang Tắt tìm việc</span>
+                  </div>
+                  <div class="section__wrapper__aside-top-searchStatus-desStatus">
+                    <p>Bật tìm việc giúp hồ sơ của bạn nổi bật hơn và được chú ý
+                      nhiều hơn trong danh sách tìm kiếm của NTD.</p>
+                  </div>
+                  <div class="section__wrapper__aside-top-searchStatus-employer">
+                    <input type="checkbox" id="employer__Search__Profile__Status">
+                    <label for="employer__Search__Profile__Status" class="employer__Search__Profile__Status"></label>
+                    <span class="employer__Search__Profile__Status-title">Cho phép NTD tìm kiếm hồ sơ</span>
+                  </div>
+                </form>
+                <div class="section__wrapper__aside-top-contactMethod">
+                  <p>Khi có cơ hội việc làm phù hợp, NTD sẽ liên hệ và trao
+                    đổi với bạn qua:</p>
+                  <div class="section__wrapper__aside-top-contactMethod-list">
+                    <span><i class="fa-solid fa-check"></i>Nhắn tin qua Top Connect trên Vieclamso1</span>
+                    <span><i class="fa-solid fa-check"></i>Email và Số điện thoại của bạn</span>
+                  </div>
+                </div>
+                <div class="section__wrapper__aside-top-appQRCode">
+                  <div class="section__wrapper__aside-top-appQRCode-des">
+                    <div class="section__wrapper__aside-top-appQRCode-des-logo">
+                      <img src="../assets/img/logo-icon-login.png" alt="" width="100%">
+                    </div>
+                    <div class="section__wrapper__aside-top-appQRCode-des-text">
+                      <p>Tải app Vieclamso1 ngay!</p>
+                      <p>Để không bỏ lỡ bất cứ cơ hội
+                        nào từ nhà tuyển dụng</p>
+                    </div>
+                  </div>
+                  <div class="section__wrapper__aside-top-appQRCode-QR">
+                    <img src="../assets/img/app_QRCode.png" alt="">
+                  </div>
+                </div>
+                <div class="section__wrapper__aside-top-CVonline">
+                  <div class="section__wrapper__aside-top-CVonline-des">
+                    <div class="section__wrapper__aside-top-CVonline-des-icon">
+                      <img src="../assets/img/information.png" alt="" width="100%">
+                    </div>
+                    <p>Khởi tạo Vieclamso1 Profile để gia tăng 300% cơ
+                      hội việc làm tốt</p>
+                  </div>
+                  <div class="section__wrapper__aside-top-CVonline-btn">
+                    <button type="button" class="btn">Tạo Vieclamso1 CV online</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Aside Middle -->
+            <div class="section__wrapper__aside-middle">
+              <div class="section__wrapper__aside-middle-hiddenCV">
+                <div class="section__wrapper__aside-middle-hiddenCV-title">
+                  <h5>Ẩn hồ sơ với NTD</h5>
+                  <span>Mới</span>
+                </div>
+                <div class="section__wrapper__aside-middle-hiddenCV-des">
+                  <p>Tôi không muốn CV của tôi hiển thị với danh sách các
+                    NTD có tên miền email và thuộc các công ty dưới đây:</p>
+                </div>
+                <form action="">
+                  <div class="section__wrapper__aside-middle-hiddenCV-byEmail">
+                    <div class="section__wrapper__aside-middle-hiddenCV-byEmail-title">
+                      <h5>Các NTD với email có tên miền</h5>
+                    </div>
+                    <div class="section__wrapper__aside-middle-hiddenCV-byEmail-des">
+                      <span><i class="fa-solid fa-circle-info"></i></span>
+                      <p>Ví dụ: Để ẩn hồ sơ của bạn với NTD có email
+                        admin@tenmiencongty.com, vui lòng nhập
+                        tenmiencongty.com.</p>
+                    </div>
+                    <div class="section__wrapper__aside-middle-hiddenCV-byEmail-form">
+                      <div class="section__wrapper__aside-middle-hiddenCV-byEmail-form-input">
+                        <input type="text" placeholder="Nhập tên miền email">
+                        <span>@</span>
+                      </div>
+                      <div class="section__wrapper__aside-middle-hiddenCV-byEmail-form-button">
+                        <button type="button" class="btn">Thêm</button>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="section__wrapper__aside-middle-hiddenCV-byCompany">
+                    <div class="section__wrapper__aside-middle-hiddenCV-byCompany-title">
+                      <h5>Các NTD thuộc công ty</h5>
+                    </div>
+                    <div class="section__wrapper__aside-middle-hiddenCV-byCompany-input">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="text" placeholder="Nhập tên công ty">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Aside Bottom -->
+            <div class="section__wrapper__aside-bottom">
+              <div class="section__wrapper__aside-bottom-title">
+                <h4>CV của bạn đã đủ tốt?</h4>
+              </div>
+              <div class="section__wrapper__aside-bottom-des">
+                <p>Bao nhiêu NTD đang quan tâm tới Hồ sơ của bạn?</p>
+              </div>
+              <div class="section__wrapper__aside-bottom-numberOfViewCV">
+                <div class="section__wrapper__aside-bottom-numberOfViewCV-view">
+                  <span>0</span>
+                  <p>lượt</p>
+                </div>
+                <div class="section__wrapper__aside-bottom-numberOfViewCV-btn">
+                  <p>Mỗi lượt Nhà tuyển dụng xem CV mang
+                    đến một cơ hội để bạn gần hơn với công việc phù hợp.</p>
+                  <button type="button" class="btn">Khám phá ngay</button>
+                </div>
+             </div>
+            </div> 
+          </div>
+        </div>
+        <div class="section__keySeacrh">
+          <a href="#">cv là gì,</a>
+          <a href="#">Mẫu CV,</a>
+          <a href="#">mẫu cv tiếng việt,</a>
+          <a href="#">Sơ yếu lý lịch,</a>
+          <a href="#">CV tham khảotổng hợp,</a>
+          <a href="#">CV tham khảo cho lập trình viên,</a>
+          <a href="#">giấy tờ thủ tục hồ sơ xin việc,</a>
+          <a href="#">Email xin việc bằng tiếng anh,</a>
+          <a href="#">Mẫu đơn xin việc,</a>
+          <a href="#">mẫu đơn xin nghỉ việc,</a>
+          <a href="#">Cách viết đơn xin nghỉ phép,</a>
+          <a href="#">Cách viết CV xin việc,</a>
+          <a href="#">cách viết CV Ngành Kinh doanh/Bán hàng,</a>
+          <a href="#">cách viết CV Ngành Kế Toán/Kiểm Toán,</a>
+          <a href="#">cách viết CV Ngành Nhân Sự,</a>
+          <a href="#">cách viết CV xin Học bổng,</a>
+          <a href="#">cách viết CV Tiếng Anh,</a>
+          <a href="#">cách viết CV Tiếng Nhật,</a>
+          <a href="#">cách viết CV Tiếng Trung,</a>
+          <a href="#">cách viết CV Tiếng Hàn,</a>
+          <a href="#">cẩm nang năm nhất cho sinh viên,</a>
+          <a href="#">Mẫu đơn xin thực tập</a>
+          <a href="#">Hướng dẫn sửa lỗi gõ tiếng Việt,</a>
+          <a href="#">Ngành du lịch làm việc gì,</a>
+          <a href="#">Cẩm nang xin việc ngành nhân sự,</a>
+          <a href="#">Xin việc ngành công nghệ thông tin,</a>
+          <a href="#">Cẩm nang xin việc ngành marketing,</a>
+          <a href="#">Cẩm nang xin việc ngành kế toán kiểm toán,</a>
+          <a href="#">Cẩm nang xin việc ngành công nghệ thực phẩm,</a>
+          <a href="#">Cẩm nang xin việc ngành tài chính ngân hàng,</a>
+          <a href="#">Cẩm nang xin việc ngành luật,</a>
+          <a href="#">Cẩm nang xin việc ngành xây dựng - địa ốc,</a>
+          <a href="#">Trắc nghiệm tính cách MBTI,</a>
+          <a href="#">Việc làm online tại nhà,</a>
+          <a href="#">Tìm việc làm tại TP. HCM,</a>
+          <a href="#">Cách viết cover letter xin việc,</a>
+          <a href="#">CV xin việc bằng tiếng Anh,</a>
+          <a href="#">CV cho sinh viên chưa tốt nghiệp,</a>
+          <a href="#">Việc làm hành chính nhân sự,</a>
+          <a href="#">Thư xin việc bằng tiếng Anh,</a>
+          <a href="#">Ngành logistic là gì,</a>
+          <a href="#">Việc làm Hải Phòng,</a>
+          <a href="#">Việc làm Bình Định,</a>
+          <a href="#">Tuyển dụng Content Marketing,</a>
+          <a href="#">Tuyển lập trình viên PHP,</a>
+          <a href="#">Tuyển lập trình viên Java,</a>
+          <a href="#">Tuyển lập trình viên .Net,</a>
+          <a href="#">Tuyển dụng nhân viên kinh doanh,</a>
+          <a href="#">Tuyển dụng nhân viên marketing,</a>
+          <a href="#">Tìm việc kế toán</a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__topWrapper">
+          <!-- COL1 -->
+          <div class="footer__topWrapper__col1 ">
+            <div class="footer__topWrapper__col1-logo">
+              <div class="footer__topWrapper__col1-logo-imgLogo">
+                <a href="#"><img src="/assets/img/logo-icon.jpg" alt="" width="100%"></a>
+              </div>
+  
+              <div class="footer__topWrapper__col1-logo-desLogo">
+                <h4>Kênh thông tin - việc làm số 1 tại Việt Nam</h4>
+              </div>
+            </div>
+            <div class="footer__topWrapper__col1-imgAuthWeb">
+              <div class="footer__topWrapper__col1-imgAuthWeb-ggAuth">
+                <img class="img-fluid " src="/assets/img/logo-gg.jpg" alt="" width="100%">
+              </div>
+              <div class="footer__topWrapper__col1-imgAuthWeb-securityAuth">
+                <img class="img-fluid " src="/assets/img/logo-security.jpg" alt="" width="100%">
+              </div>
+              <div class="footer__topWrapper__col1-imgAuthWeb-licenseAuth">
+                <img class="img-fluid " src="/assets/img/logo-registed.jpg" alt="" width="100%">  
+              </div>
+            </div>
+
+            <div class="footer__topWrapper__col1-inforContact">
+              <span>Liên hệ</span>
+              <p>Hotline: <span>(024) 6680 5577 (Giờ hành chính) </span></p>
+              <p>Email: <span>hotro@vieclamso1.vn </span></p>
+            </div>
+
+            <div class="footer__topWrapper__col1-appDownload">
+              <p>Ứng dụng tải xuống</p>
+              <div class="footer__topWrapper__col1-appDownload-link">
+                <div class="footer__topWrapper__col1-appDownload-link-appStore">
+                  <a href="#"><img class="img-fluid" src="/assets/img/logo-appstore.jpg" alt="" width="100%"></a>
+                </div>
+                <div class="footer__topWrapper__col1-appDownload-link-googlePlay">
+                  <a href="#"><img class="img-fluid" src="/assets/img/logo-ggplay.jpg" alt="" width="100%"></a>
+                </div>
+              </div>   
+            </div>
+
+            <div class="footer__topWrapper__col1-socialWeb">
+              <p>Cộng đồng Vieclamso1</p>
+              <div class="footer__topWrapper__col1-socialWeb-link">
+                <div class="footer__topWrapper__col1-socialWeb-link-facebook">
+                  <a href="#"><img class="img-fluid" src="/assets/img/facebook.png" alt="" width="100%"></a>
+                </div>
+                <div class="footer__topWrapper__col1-socialWeb-link-twitter">
+                  <a href="#"><img class="img-fluid" src="/assets/img/twitter.png" alt="" width="100%"></a>
+                </div>
+                <div class="footer__topWrapper__col1-socialWeb-link-linkedin">
+                  <a href="#"><img class="img-fluid" src="/assets/img/linkedin.png" alt="" width="100%"></a>
+                </div>
+                <div class="footer__topWrapper__col1-socialWeb-link-tiktok">
+                  <a href="#"><img class="img-fluid" src="/assets/img/tiktok.png" alt="" width="100%"></a>
+                </div>
+              </div>
+            </div> 
+            
+          </div>
+          <!-- COL2-->
+          <div class="footer__topWrapper__col2">
+            <div class="footer__topWrapper__col2-inforWeb">
+              <h1>Về Vieclamso1</h1>
+            </div>
+            <div class="footer__topWrapper__col2-linkInforWeb">
+              <ol>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Góc báo chí</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+                <li><a href="#">Quy chế hoạt động</a></li>
+              </ol>
+            </div>
+            <div class="footer__topWrapper__col2-partner">
+              <h1>Đối tác</h1>
+            </div>
+            <div class="footer__topWrapper__col2-linkPartner">
+              <ol>
+                <li><a href="#">TestCenter</a></li>
+                <li><a href="#">Vieclamso1HR</a></li>
+                <li><a href="#">ViecNgay</a></li>
+                <li><a href="#">Happy Time</a></li>
+              </ol>
+            </div>
+          </div>
+          <!-- COL3 -->  
+          <div class="footer__topWrapper__col3">
+            <div class="footer__topWrapper__col3-CV">
+              <h1>Hồ sơ và CV</h1>
+            </div>
+            <div class="footer__topWrapper__col3-linkCV">
+              </style>
+              <ol>
+                  <li><a href="#">Quản lý CV của bạn</a></li>
+                  <li><a href="#">Vieclamso1 Profile</a></li>
+                  <li><a href="#">Hướng dẫn viết CV</a></li>
+                  <li><a href="#">Thư viện CV theo ngành nghề</a></li>
+                  <li><a href="#">Review CV</a></li>
+              </ol>
+            </div>  
+            <div class="footer__topWrapper__col3-discover">
+              <h1>Khám phá</h1>
+            </div>
+            <div class="footer__topWrapper__col3-linkDiscover">
+              </style>
+              <ol>
+                  <li><a href="#">Ứng dụng di động Vieclamso1</a></li>
+                  <li><a href="#">Tính lương Gross - Net</a></li>
+                  <li><a href="#">Tính lãi suất kép</a></li>
+                  <li><a href="#">Lập kế hoạch tiết kiệm</a></li>
+                  <li><a href="#">Tính bảo hiểm thất nghiệp</a></li>
+                  <li><a href="#">Tính bảo hiểm xã hội một lần</a></li>
+                  <li><a href="#">Trắc nghiệm MBTI</a></li>
+                  <li><a href="#">Trắc nghiệm MI</a></li>
+              </ol>
+            </div>  
+          </div>
+          <!-- COL4 -->
+          <div class=" footer__topWrapper__col4">
+            <div class="footer__topWrapper__col4-buildCareer">
+              <h1>Xây dựng sự nghiệp</h1>
+            </div>
+            <div class="footer__topWrapper__col4-linkBuildCareer">
+              <ol>
+                  <li><a href="#">Việc làm tốt nhất</a></li>
+                  <li><a href="#">Việc làm lương cao</a></li>
+                  <li><a href="#">Việc làm quản lý</a></li>
+                  <li><a href="#">Việc làm IT</a></li>
+                  <li><a href="#">Việc làm Senior</a></li>
+                  <li><a href="#">Việc làm bán thời gian</a></li>
+              </ol>
+            </div>
+            <div class="footer__topWrapper__col4-selfImprovement">
+              <h1>Phát triển bản thân</h1>
+            </div>
+            <div class="footer__topWrapper__col4-linkSelfImprovement">
+              <ol>
+                  <li><a href="#">Vieclamso1 Contest</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottomWrapper">
+          <div class="footer__bottomWrapper__boxTop ">
+            <div class="footer__bottomWrapper__boxTop__inforCompany ">
+              <div class="footer__bottomWrapper__boxTop__inforCompany-title">
+                <h2>Công ty Cổ phần Việc làm số 1 Việt Nam</h2>
+              </div>
+              <div class="footer__bottomWrapper__boxTop__inforCompany-businessLicense">
+                <div class="footer__bottomWrapper__boxTop__inforCompany-businessLicense-icon">
+                  <img src="/assets/img/calculator.png" alt="" width="100%">
+                </div>
+                <div class="footer__bottomWrapper__boxTop__inforCompany-businessLicense-text">
+                  <p> Giấy phép đăng ký kinh doanh số: <span> 0107307178 </span></p>
+                </div>
+              </div>
+              <div class="footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense">
+                <div class="footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense-icon">
+                  <img src="/assets/img/file.png" alt="" width="100%">
+                </div>
+                <div class="footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense-text">
+                  <p> Giấy phép hoạt động dịch vụ việc làm số: <span> 18/SLĐTBXH GP </span></p>
+                </div>
+              </div>
+              <div class="footer__bottomWrapper__boxTop__inforCompany-headquartersCompany">
+                <div class="footer__bottomWrapper__boxTop__inforCompany-headquartersCompany-icon">
+                  <img src="/assets/img/location-pin.png" alt="" width="100%">
+                </div>
+                <div class="footer__bottomWrapper__boxTop__inforCompany-headquartersCompany-text">
+                  <p> Trụ sở HN: <span>Tòa FS GoldSeason số 47 Nguyễn Tuân, P.Thanh Xuân Trung, Q.Thanh Xuân, Hà Nội </span></p>
+                </div>
+              </div>
+              <div class="footer__bottomWrapper__boxTop__inforCompany-branchCompany">
+                <div class="footer__bottomWrapper__boxTop__inforCompany-branchCompany-icon">
+                  <img src="/assets/img/location-pin.png" alt="" width="100%">
+                </div>
+                <div class="footer__bottomWrapper__boxTop__inforCompany-branchCompany-text">
+                  <p> Chi nhánh HCM: <span>Tòa nhà Dali, 24C Phan Đăng Lưu, P.6, Q.Bình Thạnh, TP HCM </span></p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottomWrapper__boxTop__QRCode">
+              <div class="footer__bottomWrapper__boxTop__QRCode-icon">
+                <img src="/assets/img/footer-QR.jpg" alt="">
+              </div>
+              <div class="footer__bottomWrapper__boxTop__QRCode-des">
+                <h4>vieclamso1.vn</h4>
+              </div>
+            </div> 
+          </div>
+          <div class="footer__bottomWrapper__boxBot">
+            <div class="footer__bottomWrapper__boxBot__titleHR">
+              <h4>Hệ sinh thái HR Tech của Vieclamso1</h4>
+            </div>
+            <div class="footer__bottomWrapper__boxBot__appHR ">
+              <div class="footer__bottomWrapper__boxBot__appHR-Vieclamso1">
+                <div class="footer__bottomWrapper__boxBot__appHR-Vieclamso1-icon">
+                  <img src="/assets/img/logo-icon-login.png" alt="">
+                </div>
+                <div class="footer__bottomWrapper__boxBot__appHR-Vieclamso1-des">
+                  <p> Nền tảng công nghệ tuyển dụng thông minh Vieclamso1</p>
+                </div>
+              </div>
+              <div class="footer__bottomWrapper__boxBot__appHR-HappyTime">
+                <div class="footer__bottomWrapper__boxBot__appHR-HappyTime-icon">
+                  <img src="/assets/img/footer-icon2.jpg" alt="">
+                </div>
+                <div class="footer__bottomWrapper__boxBot__appHR-HappyTime-des">
+                  <p> Nền tảng quản lý và gia tăng trải nghiệm nhân viên <br>HappyTime.vn</p>
+                </div>
+              </div>
+              <div class="footer__bottomWrapper__boxBot__appHR-TestCenter">
+                <div class="footer__bottomWrapper__boxBot__appHR-TestCenter-icon">
+                  <img src="/assets/img/footer-icon3.jpg" alt="">
+                </div>
+                <div class="footer__bottomWrapper__boxBot__appHR-TestCenter-des">
+                  <p> Nền tảng thiết lập và đánh giá năng lực nhân viên <br>TestCenter.vn</p>
+                </div>
+              </div>
+              <div class="footer__bottomWrapper__boxBot__appHR-SHiring">
+                <div class="footer__bottomWrapper__boxBot__appHR-SHiring-icon">
+                  <img src="/assets/img/footer-icon4.jpg" alt="">
+                </div>
+                <div class="footer__bottomWrapper__boxBot__appHR-SHiring-des">
+                  <p> Giải pháp quản trị tuyển dụng hiệu suất cao <br>SHiring.ai</p>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+        <div class="footer__end">
+          <p> &copy; 2014 2024 Vieclamso1 Vietnam JSC. All rights reserved.</p>
+        </div> 
+      </footer>
+
+    </div>
+  </body>
+</html>

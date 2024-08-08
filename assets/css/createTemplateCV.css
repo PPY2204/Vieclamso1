@@ -1,0 +1,542 @@
+:root{
+    --primary-color: #2CE900;
+    --primaryCV-color: #FF8A00;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+/* Content CV */
+.wrapper__content-cv .titles-cv{
+    color: white;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.content-cv-left .personal-infor{
+    display: flex;
+}
+
+.content-cv-left .personal-infor__icon{
+    max-width: 5%;
+    height: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content-cv-left .personal-infor__desc{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.content-cv-left .personal-infor + .personal-infor{
+    margin-top: 15px;
+}
+
+.content-cv-right .position-time{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.content-cv-right .award{
+    display: flex;
+}
+
+.content-cv-right .award__time{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+section .wrapper{
+    padding: 50px 170px;
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section .wrapper__cv{
+    display: flex;
+    font-size: 17.5px;
+}
+
+section .wrapper__content-cv{
+    display: flex;
+    padding: 0 6px;
+    overflow-y: auto;
+    height: 900px;
+    background-color: white;
+    max-width: 1080px;
+}
+
+section .content-cv-left{
+    background-color: #666666;
+    height: 1650px;
+    
+}
+
+section .content-cv-left__avatar img{
+    width: 440px;
+    height: 440px;
+}
+
+section .content-cv-left__list{
+    color: white;
+    padding: 6px 25px;
+}
+
+section .content-cv-right{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 30px 30px;
+    height: 1650px;
+    border-right: 2px solid #666666;
+
+}
+
+section .content-cv-right__name-candidate{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* Setting CV */
+
+section .wrapper__setting-cv{
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    background-color: white;
+    min-width: 460px;
+    height: auto;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    height: fit-content;
+}
+
+
+section .setting-cv__language-btn .btn{
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    padding: 6px 30px ;
+    font-size: 20px;
+    background-color: #ECECEC;
+    outline: none;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    box-shadow: none;
+    min-width: 170px;
+}
+
+section .setting-cv__language-btn .btn:hover{
+    opacity: 0.8;
+}
+
+section .setting-cv__language-btn .btn i{
+    display: none;
+}
+
+section .setting-cv__language-btn .btn-active{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 6px 20px;
+}
+
+section .setting-cv__language-btn .btn-active i{
+    display: inline;
+    padding-right: 5px;
+
+}
+
+section .setting-cv__color-radio--orange span{
+    background-color: var(--primaryCV-color);
+}
+
+section .setting-cv__color-radio--blue span{
+    background-color: #0FA9FF;
+}
+
+section .setting-cv__color-radio span{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+section .setting-cv__color-radio span:hover{
+    opacity: 0.8;
+}
+
+section .setting-cv__color-radio span i{
+    display: none;
+}
+
+section .setting-cv__color-radio .radio-active i {
+    color: white;
+    display: inline;
+}
+
+section .setting-cv__color-radio .radio-active:active{
+    transform: scale(0.9);
+}
+
+
+section .select-menu{
+    cursor: pointer;
+    position: relative;
+}
+
+section .select{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid #ECECEC;
+    padding: 8px 20px;
+    border-radius: 6px;
+    align-items: center;
+    color: #666666;
+
+}
+
+section .option-list{
+    position: absolute;
+    background-color: #ECECEC;
+    width: 100%;
+    line-height: 30px;
+    top: 55px;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: .4s linear .2s;
+    height: 0;
+}
+
+section .option-list::-webkit-scrollbar{
+    width: 6px;
+    background-color: #ECECEC;  
+}
+
+section .option-list::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);  
+}
+
+section .option{
+    padding: 10px 20px;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+section .option:hover, section .option.selected{
+    background-color: #666666;
+    width: 100%;
+    color: white;
+}
+
+section .option-list.active{
+    height: 200px;
+    box-shadow: 0px 0px 5px 2px #ECECEC;
+
+}
+
+section .setting-cv__button button{
+    border-radius: 6px;
+    color: white;
+    padding: 6px 30px ;
+    font-size: 22px;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+section .setting-cv__button button:focus{
+    box-shadow: none;
+}
+
+section .setting-cv__button button:hover{
+    opacity: 0.8;
+    color: white;
+    transform: scale(1.005);
+}
+
+
+section .setting-cv__link-list-cv a{
+    color: var(--primary-color);
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    padding: 6px 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    text-align: center;
+}
+
+section .setting-cv__link-list-cv i{
+    margin-right: 10px;
+}
+
+section .setting-cv__link-list-cv a:hover{
+    opacity: 0.8;
+    transform: scale(1.005);
+}
+
+
+/* ------------------------ */
+
+/* Class public */
+section .wrapper__content{
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+section .heading-primary{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+section .slider{
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: var(--primary-color);
+    background-color: white;
+}
+
+section .slider:focus{
+    outline: none;
+}
+
+section .slider:active{
+    transform: scale(0.9);
+}
+
+section .slider + .slider{
+    margin-left: 10px;
+}
+
+section .content__title{
+    display: flex;
+    justify-content: space-between;
+}
+
+section .content__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Slider Jobs */
+
+section .job-box{
+    max-width: 49%;
+    border: 2px solid var(--primary-color);
+    background-color: #ECFFE8;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px 25px;
+    margin-top: 30px;
+}
+
+section .job-box__img{
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+section .job-box__img .img__logo-company{
+    width: 145px;
+    height: 150px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+section .job-box__img span img{
+    position: absolute;
+    width: 20%;
+    left: 13%;
+    top: -14%;
+}
+
+
+section .job-box__content-job{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+section .content-job__desc{
+    font-size: 19px;
+    font-weight: 500;
+    width: 75%;
+    color: black;
+    text-decoration: none;
+}
+
+section .content-job__desc:hover{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+section .icon{
+    max-width: 5%;
+    height: auto;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+section .company__name{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 82%;
+    overflow: hidden;
+}
+
+section .text-img{
+    display: flex;
+    align-items: center;
+}
+
+section .content-job__other{
+    text-align: end;
+    display: inline-block;
+}
+
+section .infor-job__salary{
+    display: inline-block;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding-bottom: 80px;
+    line-break: anywhere;
+}
+
+section .button {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+section .btn--remove{
+    max-width: 25%;
+    height: auto;
+    background-color: #E2ECE0;
+    border-radius: 8px;
+    color: #5A5E59;
+    padding: 2px;
+}
+
+section .btn--favorite{
+    background-color: #C9FFBC;
+    color: var(--primary-color);
+    padding: 2px;
+    border-radius: 8px;
+    margin-left: 18px;
+}
+
+section .btn--favorite i{
+    font-size: 28px;
+}
+
+
+/* Slider Template CV */
+
+section .template-cv__list{
+   padding-top: 20px;
+} 
+
+section .template-cv__box{
+    color: black;
+    text-decoration: none;
+}
+
+section .template-cv__box:hover{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+section .template-cv__box-img img{
+    border-radius: 6px;
+}
+
+section .template-cv__box-name{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;  
+}
+
+/* Slider Blog  */
+
+section .blog__list{
+    padding-top: 20px;
+ } 
+
+section .blog__box{
+    width: 23.5%;
+    color: black;
+    text-decoration: none;
+}
+
+section .blog__box:hover{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+section .blog__box-img{
+    max-width: 100%;
+    height: auto;
+}
+
+section .blog__box-img img{
+    height: 240px;
+    border-radius: 8px;
+}
+
+section .blog__box-name{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 20px;  
+}
+
+
+/* public */
+section .disabled{
+    color: #ECECEC;
+    border: 1px solid #ECECEC;
+}
+
+section .hidden{
+    display: none;
+}
+/* -------------------------------------- */
+
+section .wrapper__key-search{
+    padding: 0 !important;
+    margin: 0 !important;
+}

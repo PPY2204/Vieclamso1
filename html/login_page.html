@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <script src="https://kit.fontawesome.com/d94666e29a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="login_page row">
+            <div class="login_page_content col-8">
+                <form action="">
+                    <div class="login_page-title">
+                        <h1>Chào mừng bạn đã quay trở lại</h1>
+                    </div>
+                    <div class="login_page-des pb-3 text-secondary">
+                        <p>Cùng xây dựng một hồ sơ nổi bật và nhận được các cơ hội sự nghiệp lý tưởng</p>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="email">Email</label>
+                        <div class="input-icon-container">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label for="password">Password</label>
+                        <div class="input-icon-container">
+                            <i class="fa-solid fa-shield"></i>
+                            <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                            <span class="password-toggle-icon"><i class="fa-solid fa-eye-slash d-flex" id="togglePassword"></i></span>
+                            
+                        </div>
+                    </div>
+                    <div class="login_page-password__forgot py-4 d-flex justify-content-end">
+                        <a href="#">Quên mật khẩu</a>
+                    </div>
+                    <div class="login_page-btn">
+                        <button type="submit" class="btn btn-success w-100">Đăng nhập</button>
+                    </div>
+                    <div class="text-center py-4">
+                        <span>Hoặc đăng nhập bằng</span>
+                    </div>
+                    <div class="login_page-social__link w-100 d-flex justify-content-between align-content-center">
+                        <div class="google btn" style="background-color: #FF0000;">
+                            <i class="fa-brands fa-google"></i>
+                            <a href="#">Google</a>
+                        </div>
+                        <div class="facebook btn" style="background-color: #0075FF;">
+                            <i class="fa-brands fa-facebook"></i>
+                            <a href="#">Facebook</a>
+                        </div>
+                        <div class="linkedin btn" style="background-color: #0125E3;">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="#">Linkedin</a>
+                        </div>
+                    </div>
+                    <div class="login_page-principle py-5">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <span class="click_check"><i class="fa-solid fa-check"></i></span>
+                        <label class="form-check-label" for="remember"> Bằng việc đăng nhập bằng tài khoản mạng xã hội,
+                            tôi đã đọc và đồng ý với <a href="#" >Điều khoản dịch vụ</a>
+                            và <a href="#">Chính sách bảo mật</a> của Vieclamso1 </label>
+                    </div>
+                    <div class="login_page-register text-center pb-5">
+                        <span>Bạn chưa có tài khoản?</span><a href="#"> Đăng ký ngay</a>
+                    </div>
+                </form>
+                <div class="login_page-support__add__account text-center py-5">
+                    <h5 class="font-weight-bold">Bạn gặp khó khăn khi tạo tài khoản?</h5>
+                    <p>Vui lòng gọi tới số <span class="font-weight-bold">(024) 6680 5588</span> (giờ hành chính).</p>
+                </div>
+                <div class="login_page-infor__website text-center pb-3 pt-5 mt-5">
+                    <p>&copy; 2016. All Rights Reserved. Vieclamso1 Vietnam JSC.</p>
+                </div>
+            </div>
+            <div class="login_page_logo col-4 pl-4">
+                <div>
+                    <img class="img-fluid" src="../assets/img/logo-icon-login.png" alt="" width="100%" height="auto">
+                </div>
+                <h1 class="w-75 py-5">Kênh thông tin - việc
+                    làm số 1 tại Việt Nam</h1>
+                <p class="w-75">Vieclamso1 - Hệ sinh thái nhân sự tiên phong
+                    ứng dụng công nghệ tại Việt Nam</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var togglePassword = document.querySelector('#togglePassword');
+            var password = document.querySelector('#password');
+            togglePassword.addEventListener('click', function() {
+                var type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                if(type === 'text'){
+                    password.style.fontSize = '22px';
+                }
+                this.classList.toggle('fa-eye');
+            })
+        
+        })
+
+
+        document.addEventListener('DOMContentLoaded', function () { 
+            var click_check = document.querySelector('.click_check');
+            var remember = document.querySelector('#remember');
+            click_check.addEventListener('click', function () {
+                if (remember.checked == true) {
+                    remember.checked = false;
+                } else {
+                    remember.checked = true;
+                }
+            })
+         })
+
+
+    </script>
+</body>
+
+</html>

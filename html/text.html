@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Element Example</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content">
+        Phần tử 1
+    </div>
+    <button onclick="nextElement()">Next</button>
+
+    <script>
+        const elements = [
+            'Phần tử 1',
+            'Phần tử 2',
+            'Phần tử 3',
+            'Phần tử 4'
+        ];
+
+        let currentIndex = 0;
+
+        function nextElement() {
+            currentIndex = (currentIndex + 1) % elements.length;
+            document.getElementById('content').innerHTML = elements[currentIndex];
+        }
+    </script>
+</body>
+</html>

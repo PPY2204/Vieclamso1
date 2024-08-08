@@ -1,0 +1,1116 @@
+:root{
+    --primary-color: #2CE900;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+/* Form Login */
+.login_page{
+    font-size: 22px;
+}
+.login_page_content{
+    padding: 100px 170px 0 170px !important; 
+}
+
+.login_page_content h1, 
+.input-icon-container i, 
+.login_page-password__forgot a, 
+.login_page-principle a,
+.login_page-register a,
+.login_page-support__add__account span,
+.login_page-infor__website{
+    color: var(--primary-color);
+}
+.login_page_content .input-icon-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.login_page_content .input-icon-container i{
+    position: absolute; 
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.login_page_content .form-control{
+    padding-left: 70px;
+    cursor: pointer;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transform: rotateY(180deg);
+   
+}
+.password-toggle-icon i{
+    color: #666666;
+    font-size: 18px;;
+}
+
+.login_page-btn .btn{
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 22px;
+    padding: 12px 20px;
+}
+
+.login_page-social__link .btn{
+    width: 30%;
+    padding: 10px 20px;
+}
+
+input[type="email"], input[type="password"]{
+    font-size: 22px;
+}
+
+.login_page_content input::placeholder,
+.login_page-social__link a, i,
+input[type="email"],
+input[type="password"]{
+    font-size: 22px;
+}
+
+.login_page_content a:hover{
+    text-decoration: none;
+}
+
+.login_page-social__link i, .login_page-social__link a{
+    margin-left: 10px;
+    color: white;
+}
+
+.login_page-principle{
+    display: flex;
+}
+
+.login_page-principle input[type=checkbox] {
+    display: none;
+}
+
+.login_page-principle input[type=checkbox] + .click_check {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.login_page-principle input[type=checkbox] + .click_check i:before {
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    color: transparent;
+    transition: .2s;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+    margin-right: 24px;
+}
+
+.login_page-principle input[type=checkbox]:checked + .click_check i:before {
+    background-color: MediumSeaGreen ; 
+    border-color: MediumSeaGreen;
+    color: #fff;
+}
+
+.login_page-principle input[type=checkbox] + .click_check:active {
+    transform: scale(0.95);
+}
+
+.login_page_content form{
+    border-bottom: 2px solid lightgray;
+}
+
+/*Login layout right - Logo and title */
+.login_page_logo{
+    background: linear-gradient(180deg, #146001 0%, #0F4A00 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: white;
+}
+
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #F3F3F3;
+    height: auto;
+}
+
+header .header__wrapper__navbar a{
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+header .header__wrapper__right-account{
+    background-color: #F3F3F3 ;
+    padding: 8px 12px;
+    border-radius: 100px;
+}
+
+header .header__wrapper__right-notification,
+header .header__wrapper__right-note{
+    border-radius: 50%;
+    background-color: #E1FFDA;
+    padding: 10px;
+    width: 30%;
+}
+
+header .header__wrapper__right-account-avatar{
+    width: 20%;
+    padding: 8px;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 50%;
+}
+
+header .header__wrapper__right-notification img,
+header .header__wrapper__right-note img,
+header .header__wrapper__right-account-avatar img{
+    height: auto;
+    max-width: 100%;
+}
+
+header .header__wrapper__right-account .chevron-down{
+    color: var(--primary-color);
+    padding-right: 12px;
+}
+
+/* Section */
+/* Section Slider */
+section{
+    background-color: #F3F3F3;
+    margin-top: 170px;
+}
+
+section .section__wrapper{
+    display: flex;
+}
+
+section .section__wrapper__content-slider{
+    background: linear-gradient(45deg, #125701, #125701 65%, #20A000 90%, #20A000 );
+    border: 1px solid none;  
+    border-radius: 15px;
+}
+
+section .section__wrapper__content-slider-left-logo{
+    max-width: 100%;
+    height: auto;
+}
+
+section .section__wrapper__content-slider-left-title{
+    color: var(--primary-color);
+}
+
+section .section__wrapper__content-slider-left-title h1{
+    font-size: 50px;
+}
+
+section .section__wrapper__content-slider-left-des,
+section .section__wrapper__content-slider-left-btn a{
+    color: white;
+    font-size: 22px;
+}
+
+section .section__wrapper__content-slider-left-btn a{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 40px;
+    padding: 10px 60px;
+    text-decoration: none;
+
+}
+
+section .section__wrapper__content-slider-right{
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+section .section__wrapper__content-addedCV,
+section .section__wrapper__content-uploadedCV,
+section .section__wrapper__content-profile,
+section .section__wrapper__content-job{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 30px;
+
+}
+
+section .section__wrapper__content-addedCV-CV .isNotAddCV,
+section .section__wrapper__content-uploadedCV-CV .isNotUploadedCV,
+section .section__wrapper__content-addedCV-btnAddCV .btn img,
+section .section__wrapper__content-uploadedCV-btnUploadCV .btn img,
+section .section__wrapper__content-profile-btnAddProfile .btn img{
+    max-width: 100%;
+    height: auto;
+    padding: 10px 12px;
+}
+
+section .section__wrapper__content-uploadedCV-btnUploadCV .btn img{
+    padding: 10px 8px 10px 0;
+}
+
+section .section__wrapper__content-addedCV-CV span,
+section .section__wrapper__content-uploadedCV-CV span,
+section .section__wrapper__content-profile-CV span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section .section__wrapper__content-addedCV-btnAddCV,
+section .section__wrapper__content-uploadedCV-btnUploadCV{
+    margin-left: 170px;
+}
+
+section .section__wrapper__content-profile-btnAddProfile{
+    margin-left: 115px;
+}
+
+section .section__wrapper__content-addedCV-btnAddCV .btn,
+section .section__wrapper__content-uploadedCV-btnUploadCV .btn,
+section .section__wrapper__content-profile-btnAddProfile .btn{
+    padding: 0px 20px;
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 22px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+}
+
+section .section__wrapper__content-job-title h2{
+    font-weight: 600;
+    font-size: 34px;
+}
+
+section .section__wrapper__content-job-settingJob{
+    font-size: 22px;
+}
+
+section .section__wrapper__content-job-settingJob a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+section .section__wrapper__content-job-jobList{
+    background-color: #ECFFE8;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+section .section__wrapper__content-job-jobList-imgCompany{
+    max-width: 100%;
+    height: auto;
+}
+
+section .section__wrapper__content-job-jobList-imgCompany img{
+    border-radius: 24px;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-top-desJob{
+    width: 70%;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-top-salary{
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-nameCompany{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-note{
+    padding-top: 12px;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-note > span{
+    margin-right: 10px;
+    background-color: #D9D9D9;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 12px 15px 0 0;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-note .apply-deadline{
+    font-weight: 600;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-btn .applyJob{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-btn .job-favourite{
+    background-color: #C9FFBC;
+    color: var(--primary-color);
+    padding: 4px;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-btn .job-favourite i{
+    font-size: 42px;
+    vertical-align: middle;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-btn .deleteJob{
+    background-color: #ECFFE8;
+}
+
+section .section__wrapper__content-job-jobList-inforJob-bottom-btn .deleteJob img{
+    background-color: #E2ECE0;
+    border-radius: 8px;
+    color: #5A5E59;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+section .section__wrapper__content-job-allSuitableJob .btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 22px;
+    white-space: nowrap; 
+}
+
+/* Section - Aside top */
+
+section .section__wrapper__aside-top{
+    background-color: white;
+    border-radius: 15px;
+}
+
+section .section__wrapper__aside-top-account{
+    padding: 40px 0px 0px 30px;
+}
+
+section .section__wrapper__aside-top-account-avatar{
+    padding: 30px;   
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    width: 190px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+section .section__wrapper__aside-top-account-avatar .setting-Avatar{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 8px;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+}
+
+section .section__wrapper__aside-top-account-avatar .setting-Avatar img{
+    width: 100%;
+}
+
+section .section__wrapper__aside-top-account-status{
+    margin-left: 30px;
+}
+
+section .section__wrapper__aside-top-account-status p{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+section .section__wrapper__aside-top-account-status h2{
+    margin-bottom: 15px;
+}
+
+section .section__wrapper__aside-top-account-status-auth{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+}
+
+section .section__wrapper__aside-top-account-status-upgradeAcc{
+    margin-bottom: 0;
+    padding: 2px 12px;
+    background-color: #ECECEC;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+section .section__wrapper__aside-top-account-status-upgradeAcc a{    
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;   
+    display: flex;
+    align-items: center;
+}
+
+section .section__wrapper__aside-top-account-status-upgradeAcc a i{   
+    font-size: 16px;
+    padding: 2px 4px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    margin-right: 6px;
+    text-align: center;
+}
+
+section .section__wrapper__aside-top-searchStatus{
+    padding: 50px 30px 20px 30px ;
+}
+
+section .section__wrapper__aside-top-searchStatus-job,
+section .section__wrapper__aside-top-searchStatus-employer{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+section .section__wrapper__aside-top-searchStatus-job .jobSearchStatus,
+section .section__wrapper__aside-top-searchStatus-employer .employer__Search__Profile__Status{
+    background-color: #D9D9D9;
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+section .section__wrapper__aside-top-searchStatus-job .jobSearchStatus::before,
+section .section__wrapper__aside-top-searchStatus-employer .employer__Search__Profile__Status::before{
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 0.2s;
+}
+
+section .section__wrapper__aside-top-searchStatus-job input:checked + .jobSearchStatus,
+section .section__wrapper__aside-top-searchStatus-employer input:checked + .employer__Search__Profile__Status{
+background-color: var(--primary-color);
+}
+
+section .section__wrapper__aside-top-searchStatus-job input:checked + .jobSearchStatus::before,
+section .section__wrapper__aside-top-searchStatus-employer input:checked + .employer__Search__Profile__Status::before{
+    transform: translateX(40px);
+}
+
+section .section__wrapper__aside-top-searchStatus-job input,
+section .section__wrapper__aside-top-searchStatus-employer input{
+    display: none;
+}
+
+section .section__wrapper__aside-top-searchStatus-job .jobSearchStatus-title,
+section .section__wrapper__aside-top-searchStatus-employer .employer__Search__Profile__Status-title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section .section__wrapper__aside-top-searchStatus-desStatus p{
+    font-size: 18px;
+    color: #6c757d;
+}
+
+section .section__wrapper__aside-top-contactMethod{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+section .section__wrapper__aside-top-contactMethod p{
+    margin-bottom: 10px;
+}
+
+section .section__wrapper__aside-top-contactMethod-list{
+    display: flex;
+    flex-direction: column;
+}
+
+section .section__wrapper__aside-top-contactMethod-list i{
+    font-size: 14px;
+    margin-right: 15px;
+    padding: 4px;
+    background-color: #E1FFDA;
+    color: var(--primary-color);
+    border-radius: 50%;
+}   
+
+section .section__wrapper__aside-top-appQRCode{
+    margin-top: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #0F4A00 10%, #1D9000 100%);
+
+}
+
+section .section__wrapper__aside-top-appQRCode-des-logo{
+    width: 150px;
+    height: auto;
+}
+
+section .section__wrapper__aside-top-appQRCode-des-text{
+    color: white;
+    padding-top: 20px;
+}
+section .section__wrapper__aside-top-appQRCode-des-text p{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+section .section__wrapper__aside-top-appQRCode-QR{
+    margin-left: 20px;
+}
+
+section .section__wrapper__aside-top-CVonline{
+    border-top: 2px solid #ECECEC;
+    margin-top: 30px;
+    padding: 40px 0px 20px 0;
+}
+
+section .section__wrapper__aside-top-CVonline-des{
+    display: flex;
+}
+
+section .section__wrapper__aside-top-CVonline-des-icon{
+    margin-right: 8px;
+    line-height: 30px;
+    width: 24px;
+    height: auto;
+}
+
+section .section__wrapper__aside-top-CVonline-des p{
+    font-size: 22px;
+    color: #666666 ;
+}
+
+section .section__wrapper__aside-top-CVonline-btn{
+    padding-top: 20px;
+}
+
+section .section__wrapper__aside-top-CVonline-btn button{
+    color: var(--primary-color);
+    font-size: 22px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-weight: 600;
+}
+/* Aside Middle */
+section .section__wrapper__aside-middle{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-title{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-title h5{
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-bottom: -10px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-title span{
+    font-size: 20px;
+    color: white;
+    padding: 0px 12px;
+    background-color: #FF8A00;
+    border-radius: 12px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-des p{
+    font-size: 22px;
+    color: #6c757d;
+    padding-top: 10px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail{
+    padding-top: 20px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-title h5{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-des{
+    display: flex;
+    background-color: #ECECEC ;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-des span i{
+    margin-right: 20px;
+    color: #5E5E5E;
+    line-height: 30px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-des p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-form{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid #ECECEC;
+    padding-bottom: 40px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-form-input input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ECECEC;
+    padding: 7px 80px 7px 90px;
+    cursor: pointer;
+}
+
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-form-input span{
+    position: absolute;
+    top:50%;
+    left: 25px;
+    transform: translateY(-70%);
+    font-size: 22px;
+    color: #5E5E5E;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-form-input input::placeholder{
+    font-size: 20px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byEmail-form-button button{
+    font-size: 22px;
+    background-color: #ECECEC;
+    color: #5E5E5E;
+    font-weight: 600;
+    padding: 6px 25px;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byCompany{
+    padding: 40px 0 10px 0;
+    position: relative;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byCompany-title h5{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+section .section__wrapper__aside-middle-hiddenCV-byCompany-input i{
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    transform: translateY(-10%);
+    color: #5E5E5E;
+    font-size: 20px;
+}
+section .section__wrapper__aside-middle-hiddenCV-byCompany-input input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 60px;
+    border: 1px solid #ECECEC;
+    cursor: pointer;
+}
+
+section .section__wrapper__aside-middle-hiddenCV-byCompany-input input::placeholder{
+    font-size: 20px;
+}
+
+section .section__wrapper__aside-middle input[type="text"]{
+    font-size: 20px;
+    color: #5E5E5E;
+}
+
+/* Aside Bottom */
+section .section__wrapper__aside-bottom{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+section .section__wrapper__aside-bottom-des{
+    font-size: 18px;
+    color: #5E5E5E;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV{
+    display: flex;
+    padding: 20px 0;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV-view{
+    padding: 5px 50px;
+    background-color: #C5C5C5;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV-view span {
+    font-size: 50px;
+    line-height: 2;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV-view p {
+    line-height: 0;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 0;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV-btn p{
+    font-size: 18px;
+    color: #5E5E5E;
+    font-weight: 400;
+}
+
+section .section__wrapper__aside-bottom-numberOfViewCV-btn button{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2px 20px;
+}
+
+section .section__keySeacrh{
+    padding: 10px 124px;
+    margin: 80px 0;
+}
+
+section .section__keySeacrh a{
+    font-size: 22px;
+    color: #000000;
+    line-height: 2.7;
+}
+
+/* Footer */
+footer{
+}
+
+footer .footer__topWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px 30px;
+}
+
+footer .footer__topWrapper__col1{
+    width: 35%;
+}
+
+footer .footer__topWrapper__col1-logo-imgLogo{
+    /* text-center pb-4 w-100 */
+    max-width: 80%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+footer .footer__topWrapper__col1-logo-desLogo h4{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+footer .footer__topWrapper__col1-imgAuthWeb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    width: 85%;
+}
+
+footer .footer__topWrapper__col1-imgAuthWeb-ggAuth,
+footer .footer__topWrapper__col1-imgAuthWeb-securityAuth,
+footer .footer__topWrapper__col1-imgAuthWeb-licenseAuth{
+    max-width: 100%;
+    height: auto;
+}
+
+footer .footer__topWrapper__col1-inforContact{
+    font-size: 26px;
+}
+
+footer .footer__topWrapper__col1-inforContact span{
+    font-weight: 600;
+}
+
+footer .footer__topWrapper__col1-inforContact p{
+    margin-bottom: 0;
+}
+
+footer .footer__topWrapper__col1-appDownload p{
+    padding: 30px 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+footer .footer__topWrapper__col1-appDownload-link{
+    display: flex;
+}
+
+footer .footer__topWrapper__col1-appDownload-link-appStore,
+footer .footer__topWrapper__col1-appDownload-link-googlePlay{
+    max-width: 45%;
+    padding-right: 30px;
+    height: auto;
+}
+
+
+footer .footer__topWrapper__col1-appDownload-link-appStore img,
+footer .footer__topWrapper__col1-appDownload-link-googlePlay img{
+    border-radius: 6px;
+}
+
+
+footer .footer__topWrapper__col1-socialWeb{
+    font-size: 26px;
+    padding: 50px 0;
+    font-weight: 600;
+}
+
+footer .footer__topWrapper__col1-socialWeb-link{
+    display: flex;
+}
+
+footer .footer__topWrapper__col1-socialWeb p{
+    padding-bottom: 30px;
+}
+
+footer .footer__topWrapper__col1-socialWeb-link-facebook,
+footer .footer__topWrapper__col1-socialWeb-link-twitter,
+footer .footer__topWrapper__col1-socialWeb-link-linkedin,
+footer .footer__topWrapper__col1-socialWeb-link-tiktok{
+    max-width: 8%;
+    height: auto;
+    color:#333333;
+    margin-right: 30px;
+}
+
+footer .footer__topWrapper h1{
+    font-size: 34px;
+}
+
+footer .footer__topWrapper a{
+    color: black;
+    font-size: 26px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+
+footer .footer__topWrapper__col2 ol,
+footer .footer__topWrapper__col3 ol,
+footer .footer__topWrapper__col4 ol{
+    list-style-type: none;
+    padding: 30px 0;
+}
+
+footer .footer__bottomWrapper{
+    padding: 0 30px;
+}
+/* Footer Bottom Wrapper */
+footer .footer__bottomWrapper__boxTop{
+    border-top: 2px solid #ECECEC;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px 0 30px;
+}
+
+
+footer .footer__bottomWrapper__boxTop__inforCompany-businessLicense,
+footer .footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense,
+footer .footer__bottomWrapper__boxTop__inforCompany-headquartersCompany,
+footer .footer__bottomWrapper__boxTop__inforCompany-branchCompany{
+    padding-top: 10px;
+    display: flex;
+}
+
+footer .footer__bottomWrapper__boxTop__inforCompany-businessLicense-icon,
+footer .footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense-icon,
+footer .footer__bottomWrapper__boxTop__inforCompany-headquartersCompany-icon,
+footer .footer__bottomWrapper__boxTop__inforCompany-branchCompany-icon{
+    max-width: 2.5%;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer .footer__bottomWrapper__boxTop__inforCompany-businessLicense-text p,
+footer .footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense-text p,
+footer .footer__bottomWrapper__boxTop__inforCompany-headquartersCompany-text p,
+footer .footer__bottomWrapper__boxTop__inforCompany-branchCompany-text p{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+footer .footer__bottomWrapper__boxTop__inforCompany-businessLicense-text span,
+footer .footer__bottomWrapper__boxTop__inforCompany-serviceOperationLicense-text span,
+footer .footer__bottomWrapper__boxTop__inforCompany-headquartersCompany-text span,
+footer .footer__bottomWrapper__boxTop__inforCompany-branchCompany-text span{
+    font-weight: 600;
+}
+
+footer .footer__bottomWrapper__boxTop__QRCode{
+    text-align: center;
+}
+
+footer .footer__bottomWrapper__boxTop__QRCode-icon{
+    max-width: 100%;
+    height: auto;
+}
+
+footer .footer__bottomWrapper__boxTop__QRCode-des h4{
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+footer .footer__bottomWrapper__boxBot__appHR{
+    padding: 30px 0;
+    display: flex;
+    color: white;
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-Vieclamso1,
+footer .footer__bottomWrapper__boxBot__appHR-HappyTime,
+footer .footer__bottomWrapper__boxBot__appHR-TestCenter,
+footer .footer__bottomWrapper__boxBot__appHR-SHiring{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 25%;
+    margin-right: 2px;
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-Vieclamso1{
+    background-image: linear-gradient( to right, #135D00, #20A000);
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-HappyTime-icon,
+footer .footer__bottomWrapper__boxBot__appHR-TestCenter-icon,
+footer .footer__bottomWrapper__boxBot__appHR-SHiring-icon{
+    max-width: 100%;
+    height: auto;
+}
+footer .footer__bottomWrapper__boxBot__appHR-Vieclamso1-icon{
+    max-width: 34%;
+    height: auto
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-Vieclamso1-icon img,
+footer .footer__bottomWrapper__boxBot__appHR-HappyTime-icon img,
+footer .footer__bottomWrapper__boxBot__appHR-TestCenter-icon img,
+footer .footer__bottomWrapper__boxBot__appHR-SHiring-icon img{
+    padding-right: 60px;
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-Vieclamso1-icon img{
+    width: 100%;
+    padding: 34px 0;
+    padding-right: 25px;
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-Vieclamso1-des p,
+footer .footer__bottomWrapper__boxBot__appHR-HappyTime-des p,
+footer .footer__bottomWrapper__boxBot__appHR-TestCenter-des p,
+footer .footer__bottomWrapper__boxBot__appHR-SHiring-des p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+footer .footer__bottomWrapper__boxBot__appHR-HappyTime{
+    background-color: #FF8A00;
+}
+
+
+footer .footer__bottomWrapper__boxBot__appHR-TestCenter{
+    background-image: linear-gradient( to right, #003E52, #00BBF6);
+}
+
+
+footer .footer__bottomWrapper__boxBot__appHR-SHiring{
+    background-color: #21A400;
+}
+
+
+footer .footer__end{
+    text-align: center;
+}
+
+footer .footer__end p{
+    font-size: 22px;
+    font-weight: 500;
+}
+

@@ -177,6 +177,7 @@ section .setting-cv__color-radio span{
     height: 30px;
     margin-right: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 section .setting-cv__color-radio span:hover{
@@ -536,7 +537,43 @@ section .hidden{
 }
 /* -------------------------------------- */
 
+section .skill-cv__content-paragraph a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+section .wrapper__skill-cv{
+    font-size: 22px;
+}
+
+section .wrapper__skill-cv span{
+    font-weight: 500;
+}
+
+section .wrapper__skill-cv ul{
+    padding-left: 40px;
+}
 section .wrapper__key-search{
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 10px 0;
+    margin: 80px 0;
+}
+
+section .wrapper__key-search a{
+    font-size: 22px;
+    color: #000000;
+    line-height: 2.7;
+}
+
+/* Laptop */
+@media only screen and (max-width: 1860px ) {
+    header .header__wrapper__navbar a{
+        font-size: 22px !important;
+    }
+    header .header__wrapper__logo-des h5{
+        font-size: 18px !important;
+    }
+
+    section .wrapper{
+        padding: 50px 100px !important;
+    }
 }
